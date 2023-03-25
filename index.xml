@@ -8,6 +8,16 @@
     <language>es-es</language>
     <lastBuildDate>Fri, 24 Mar 2023 15:31:09 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Sobre mí</title>
+      <link>http://example.org/about/</link>
+      <pubDate>Sat, 25 Mar 2023 11:10:35 -0600</pubDate>
+      
+      <guid>http://example.org/about/</guid>
+      <description>¡Hola! Soy Mikel Cantero, un ingeniero de software con más de 4 años de experiencia en el desarrollo web. He trabajado en proyectos tanto pequeños como grandes, en los cuales he usado distintos lenguajes de programación PHP, JavaScript, Python, Bash entre otros. Sin embargo, PHP y JavaScript son en los que me siento más cómodo.
+También tengo conocimientos en distintas herramientas y tecnologías tales como: HTML, CSS, Sphinx Search Engine, Google Cloud, Administración de servidores, Bases de datos relacionales (especialmente MySQL y MariaDB), Web Scraping, Progresive Web App, AMP y demás.</description>
+    </item>
+    
+    <item>
       <title>Ventajas de la Programación Orientada a Objetos</title>
       <link>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</link>
       <pubDate>Fri, 24 Mar 2023 15:31:09 -0600</pubDate>
