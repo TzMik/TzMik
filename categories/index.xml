@@ -6,7 +6,34 @@
     <description>Recent content in Categories on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 24 Mar 2023 15:31:09 -0600</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 27 Mar 2023 17:20:00 -0600</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>administración de servidores</title>
+      <link>http://example.org/categories/administraci%C3%B3n-de-servidores/</link>
+      <pubDate>Mon, 27 Mar 2023 17:20:00 -0600</pubDate>
+      
+      <guid>http://example.org/categories/administraci%C3%B3n-de-servidores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linux</title>
+      <link>http://example.org/categories/linux/</link>
+      <pubDate>Mon, 27 Mar 2023 17:20:00 -0600</pubDate>
+      
+      <guid>http://example.org/categories/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ubuntu</title>
+      <link>http://example.org/categories/ubuntu/</link>
+      <pubDate>Mon, 27 Mar 2023 17:20:00 -0600</pubDate>
+      
+      <guid>http://example.org/categories/ubuntu/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>programación orientada a objetos</title>
       <link>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</link>
