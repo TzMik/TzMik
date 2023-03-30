@@ -2,13 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/constantes/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/constructor/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/destructor/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/php/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/recordando-conceptos-de-la-poo/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/static/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2023-03-30T17:24:01-06:00</lastmod>
+  </url><url>
     <loc>http://example.org/tags/administraci%C3%B3n-de-servidores/</loc>
     <lastmod>2023-03-27T17:20:00-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/administraci%C3%B3n-de-servidores/</loc>
-    <lastmod>2023-03-27T17:20:00-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
     <lastmod>2023-03-27T17:20:00-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/comandos/</loc>
@@ -21,15 +54,6 @@
     <lastmod>2023-03-27T17:20:00-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/linux/</loc>
-    <lastmod>2023-03-27T17:20:00-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2023-03-27T17:20:00-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-03-27T17:20:00-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
     <lastmod>2023-03-27T17:20:00-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/terminal/</loc>
@@ -45,12 +69,6 @@
     <lastmod>2023-03-25T11:10:35-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/programaci%C3%B3n/</loc>
-    <lastmod>2023-03-24T15:31:09-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</loc>
-    <lastmod>2023-03-24T15:31:09-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</loc>
     <lastmod>2023-03-24T15:31:09-06:00</lastmod>
   </url><url>
     <loc>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</loc>

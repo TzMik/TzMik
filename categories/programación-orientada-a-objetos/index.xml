@@ -6,7 +6,16 @@
     <description>Recent content in programación orientada a objetos on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 24 Mar 2023 15:31:09 -0600</lastBuildDate><atom:link href="http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 30 Mar 2023 17:24:01 -0600</lastBuildDate><atom:link href="http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recordando conceptos de la POO</title>
+      <link>http://example.org/posts/recordando-conceptos-de-la-poo/</link>
+      <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
+      
+      <guid>http://example.org/posts/recordando-conceptos-de-la-poo/</guid>
+      <description>La programación orientada a objetos (POO) es un paradigma de programación que se centra en el uso de objetos para representar entidades del mundo real y sus interacciones. En POO, los objetos son instancias de una clase, que es una plantilla que define las propiedades y comportamientos del objeto. En este contexto, existen algunos términos importantes que se utilizan con frecuencia y que me gustaría recordar, como el constructor, destructor, static y constantes.</description>
+    </item>
+    
     <item>
       <title>Ventajas de la Programación Orientada a Objetos</title>
       <link>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</link>

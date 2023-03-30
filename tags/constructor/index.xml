@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>constructor on Mikel Cantero</title>
+    <link>http://example.org/tags/constructor/</link>
+    <description>Recent content in constructor on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Thu, 30 Mar 2023 17:24:01 -0600</lastBuildDate><atom:link href="http://example.org/tags/constructor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Recordando conceptos de la POO</title>
+      <link>http://example.org/posts/recordando-conceptos-de-la-poo/</link>
+      <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
+      
+      <guid>http://example.org/posts/recordando-conceptos-de-la-poo/</guid>
+      <description>La programación orientada a objetos (POO) es un paradigma de programación que se centra en el uso de objetos para representar entidades del mundo real y sus interacciones. En POO, los objetos son instancias de una clase, que es una plantilla que define las propiedades y comportamientos del objeto. En este contexto, existen algunos términos importantes que se utilizan con frecuencia y que me gustaría recordar, como el constructor, destructor, static y constantes.</description>
+    </item>
+    
+  </channel>
+</rss>

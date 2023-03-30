@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+  Recordando conceptos de la POO · Mikel Cantero
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Mikel Cantero">
+<meta name="description" content="En este post hablaremos del constructor, destructor, de los métodos y variables estáticas y las constantes de una clase">
+<meta name="keywords" content="blog,desarrollo web,ingeniería de software">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Recordando conceptos de la POO"/>
+<meta name="twitter:description" content="En este post hablaremos del constructor, destructor, de los métodos y variables estáticas y las constantes de una clase"/>
+
+<meta property="og:title" content="Recordando conceptos de la POO" />
+<meta property="og:description" content="En este post hablaremos del constructor, destructor, de los métodos y variables estáticas y las constantes de una clase" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/recordando-conceptos-de-la-poo/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-03-30T17:24:01-06:00" />
+<meta property="article:modified_time" content="2023-03-30T17:24:01-06:00" />
+
+
+
+
+
+<link rel="canonical" href="http://example.org/posts/recordando-conceptos-de-la-poo/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.92.2" />
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Mikel Cantero
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">Sobre mí</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://example.org/posts/recordando-conceptos-de-la-poo/">
+              Recordando conceptos de la POO
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-03-30T17:24:01-06:00">
+                marzo 30, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4 minutos de lectura.
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/programaci%C3%B3n-orientada-a-objetos/">programación orientada a objetos</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/programaci%C3%B3n-orientada-a-objetos/">programación orientada a objetos</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/constructor/">constructor</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/destructor/">destructor</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/static/">static</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/constantes/">constantes</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/php/">php</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>La programación orientada a objetos (POO) es un paradigma de programación que se centra en el uso de objetos para representar entidades del mundo real y sus interacciones. En POO, los objetos son instancias de una clase, que es una plantilla que define las propiedades y comportamientos del objeto. En este contexto, existen algunos términos importantes que se utilizan con frecuencia y que me gustaría recordar, <strong>como el constructor, destructor, static y constantes</strong>. En este post educativo, hablaremos sobre estos términos en el contexto de la programación orientada a objetos y proporcionaremos ejemplos de su uso en PHP.</p>
+<h2 id="constructor">
+  Constructor
+  <a class="heading-link" href="#constructor">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>El constructor es un método especial de una clase que se utiliza para inicializar los objetos de esa clase. El constructor se llama automáticamente cuando se crea un objeto de la clase y se utiliza para asignar valores iniciales a las propiedades del objeto. En PHP, el constructor se define utilizando el método <code>__construct()</code>.</p>
+<p>Ejemplo de constructor en PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
+    <span style="color:#fff;font-weight:bold">public</span> $nombre;
+    <span style="color:#fff;font-weight:bold">public</span> $edad;
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
+        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
+        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
+    }
+}
+
+$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
+<span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">nombre</span>; <span style="color:#007f7f">// output: Juan
+</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">edad</span>; <span style="color:#007f7f">// output: 25
+</span><span style="color:#007f7f"></span>
+</code></pre></div><p>En este ejemplo, el constructor de la clase Persona se utiliza para asignar los valores iniciales de <code>$nombre</code> y <code>$edad</code> al objeto <code>$persona</code>.</p>
+<h2 id="destructor">
+  Destructor
+  <a class="heading-link" href="#destructor">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>El destructor es un método especial de una clase que se utiliza para liberar los recursos utilizados por el objeto cuando ya no se necesita. El destructor se llama automáticamente cuando el objeto se destruye, ya sea porque se eliminó explícitamente o porque el programa ha terminado. En PHP, el destructor se define utilizando el método <code>__destruct()</code>.</p>
+<p>Ejemplo de destructor en PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
+    <span style="color:#fff;font-weight:bold">public</span> $nombre;
+    <span style="color:#fff;font-weight:bold">public</span> $edad;
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
+        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
+        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
+    }
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __destruct() {
+        <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Objeto eliminado.&#34;</span>;
+    }
+}
+
+$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
+unset($persona); <span style="color:#007f7f">// Output: Objeto eliminado.
+</span></code></pre></div><p>En este ejemplo, el destructor de la clase Persona se utiliza para mostrar un mensaje cuando el objeto se elimina explícitamente utilizando la función <code>unset()</code>.</p>
+<h2 id="static">
+  Static
+  <a class="heading-link" href="#static">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>La palabra clave static se utiliza para definir propiedades y métodos que pertenecen a la clase en sí, en lugar de pertenecer a un objeto de la clase. Las propiedades y métodos estáticos se pueden utilizar sin crear una instancia de la clase y se accede a ellas utilizando el nombre de la clase en lugar del objeto. En PHP, se define una propiedad estática utilizando la palabra clave <code>static</code> antes del nombre de la propiedad.</p>
+<p>Ejemplo de propiedad estática en PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> $contador = <span style="color:#ff0;font-weight:bold">0</span>;
+    <span style="color:#fff;font-weight:bold">public</span> $nombre;
+    <span style="color:#fff;font-weight:bold">public</span> $edad;
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
+        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
+        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
+        self::$contador++;
+    }
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">function</span> getContador() {
+        <span style="color:#fff;font-weight:bold">return</span> self::$contador;
+    }
+}
+
+$persona1 = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
+$persona2 = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Maria&#34;</span>, <span style="color:#ff0;font-weight:bold">30</span>);
+<span style="color:#fff;font-weight:bold">echo</span> Persona::<span style="color:#007f7f">getContador</span>(); <span style="color:#007f7f">// output: 2
+</span></code></pre></div><p>En este ejemplo, la propiedad <code>$contador</code> cuenta cuantas instancias de la clase <code>Persona</code> existen. En el constructor sumamos 1 al <code>$contador</code> cada vez que se crea una instancia de la calse <code>Persona</code> y con el método <code>getContador()</code> podemos imprimir el valor de ese contador.</p>
+<h2 id="constantes">
+  Constantes
+  <a class="heading-link" href="#constantes">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Las constantes son valores que no pueden cambiarse una vez que se definen. En POO, las constantes se utilizan para definir valores que son importantes para la clase, pero que no cambian durante la ejecución del programa. En PHP, se define una constante utilizando la palabra reservada <code>const</code>.</p>
+<p>Ejemplo de constante en PHP:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
+    <span style="color:#fff;font-weight:bold">const</span> ESPERANZA_VIDA = <span style="color:#ff0;font-weight:bold">80</span>;
+
+    <span style="color:#fff;font-weight:bold">public</span> $nombre;
+    <span style="color:#fff;font-weight:bold">public</span> $edad;
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
+        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
+        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
+    }
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> getEsperanzaVida() {
+        <span style="color:#fff;font-weight:bold">return</span> self::<span style="color:#007f7f">ESPERANZA_VIDA</span> - $this-&gt;<span style="color:#007f7f">edad</span>;
+    }
+}
+
+$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
+<span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">getEsperanzaVida</span>(); <span style="color:#007f7f">// output: 55
+</span></code></pre></div><p>En este ejemplo, la constante <code>ESPERANZA_VIDA</code> se utiliza para definir la esperanza de vida de una persona en años. La función <code>getEsperanzaVida()</code> se utiliza para calcular la esperanza de vida restante de una persona.</p>
+<p>En resumen, en la programación orientada a objetos, el constructor se utiliza para inicializar los objetos de una clase, el destructor se utiliza para liberar los recursos utilizados por el objeto cuando ya no se necesita, las propiedades y métodos estáticos se utilizan para pertenecer a la clase en sí, en lugar de pertenecer a un objeto de la clase, y las constantes se utilizan para definir valores que son importantes para la clase, pero que no cambian durante la ejecución del programa.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Mikel Cantero 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>
