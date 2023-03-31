@@ -6,7 +6,17 @@
     <description>Recent content on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 31 Mar 2023 11:23:00 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:48:53 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La herencia en la Programación Orientada a Objetos</title>
+      <link>http://example.org/posts/herencia-en-la-poo/</link>
+      <pubDate>Fri, 31 Mar 2023 11:48:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/herencia-en-la-poo/</guid>
+      <description>La herencia es un concepto fundamental en la programación orientada a objetos. En este post, exploraremos las ventajas y desventajas de la herencia en PHP, las diferencias entre las variables públicas, privadas y protegidas, la sobreescritura de métodos y variables en una clase hija, y los métodos y clases de tipo final.
+Introducción  Link to heading   La herencia es uno de los conceptos fundamentales de la programación orientada a objetos.</description>
+    </item>
+    
     <item>
       <title>Serializar y deserializar objetos</title>
       <link>http://example.org/posts/serializar-deserialiar-objetos/</link>
