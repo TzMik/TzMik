@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 30 Mar 2023 17:24:01 -0600</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:23:00 -0600</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>deserialización</title>
+      <link>http://example.org/tags/deserializaci%C3%B3n/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/tags/deserializaci%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>http://example.org/tags/php/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/tags/php/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>programación orientada a objetos</title>
+      <link>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>serialización</title>
+      <link>http://example.org/tags/serializaci%C3%B3n/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/tags/serializaci%C3%B3n/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>constantes</title>
       <link>http://example.org/tags/constantes/</link>
@@ -31,24 +67,6 @@
       <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
       
       <guid>http://example.org/tags/destructor/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>php</title>
-      <link>http://example.org/tags/php/</link>
-      <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
-      
-      <guid>http://example.org/tags/php/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>programación orientada a objetos</title>
-      <link>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</link>
-      <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
-      
-      <guid>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</guid>
       <description></description>
     </item>
     

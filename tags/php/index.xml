@@ -6,7 +6,26 @@
     <description>Recent content in php on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 30 Mar 2023 17:24:01 -0600</lastBuildDate><atom:link href="http://example.org/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:23:00 -0600</lastBuildDate><atom:link href="http://example.org/tags/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serializar y deserializar objetos</title>
+      <link>http://example.org/posts/serializar-deserialiar-objetos/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/posts/serializar-deserialiar-objetos/</guid>
+      <description>Serialización es el proceso de convertir un objeto en una cadena de bytes que puede ser almacenada o transmitida a través de una red. La serialización permite que un objeto complejo se convierta en una forma que pueda ser almacenada o transmitida, y luego se pueda reconstruir en su forma original más tarde. En PHP, la serialización se realiza utilizando la función serialize(), que toma un objeto y devuelve una cadena de caracteres que representa el objeto serializado.</description>
+    </item>
+    
+    <item>
+      <title>Magic Methods de PHP</title>
+      <link>http://example.org/posts/magic-methods-de-php/</link>
+      <pubDate>Fri, 31 Mar 2023 10:45:34 -0600</pubDate>
+      
+      <guid>http://example.org/posts/magic-methods-de-php/</guid>
+      <description>En PHP, existen varios métodos especiales llamados magic methods que permiten a los desarrolladores personalizar el comportamiento de las clases y objetos. Estos métodos se llaman automáticamente en ciertas situaciones específicas, como cuando se accede a una propiedad inexistente, se llama a un método inexistente, o se convierte un objeto en una cadena de texto, entre otras.
+A continuación, se explicará cada uno de estos métodos especiales de PHP, junto con ejemplos que muestran cómo se pueden utilizar.</description>
+    </item>
+    
     <item>
       <title>Recordando conceptos de la POO</title>
       <link>http://example.org/posts/recordando-conceptos-de-la-poo/</link>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>deserialización on Mikel Cantero</title>
+    <link>http://example.org/tags/deserializaci%C3%B3n/</link>
+    <description>Recent content in deserialización on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 31 Mar 2023 11:23:00 -0600</lastBuildDate><atom:link href="http://example.org/tags/deserializaci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Serializar y deserializar objetos</title>
+      <link>http://example.org/posts/serializar-deserialiar-objetos/</link>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
+      
+      <guid>http://example.org/posts/serializar-deserialiar-objetos/</guid>
+      <description>Serialización es el proceso de convertir un objeto en una cadena de bytes que puede ser almacenada o transmitida a través de una red. La serialización permite que un objeto complejo se convierta en una forma que pueda ser almacenada o transmitida, y luego se pueda reconstruir en su forma original más tarde. En PHP, la serialización se realiza utilizando la función serialize(), que toma un objeto y devuelve una cadena de caracteres que representa el objeto serializado.</description>
+    </item>
+    
+  </channel>
+</rss>

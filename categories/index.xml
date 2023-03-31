@@ -6,13 +6,22 @@
     <description>Recent content in Categories on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Thu, 30 Mar 2023 17:24:01 -0600</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2023 11:23:00 -0600</lastBuildDate><atom:link href="http://example.org/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>programación orientada a objetos</title>
       <link>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</link>
-      <pubDate>Thu, 30 Mar 2023 17:24:01 -0600</pubDate>
+      <pubDate>Fri, 31 Mar 2023 11:23:00 -0600</pubDate>
       
       <guid>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>php</title>
+      <link>http://example.org/categories/php/</link>
+      <pubDate>Fri, 31 Mar 2023 10:45:34 -0600</pubDate>
+      
+      <guid>http://example.org/categories/php/</guid>
       <description></description>
     </item>
     
