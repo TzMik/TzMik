@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>traits on Mikel Cantero</title>
+    <link>http://example.org/tags/traits/</link>
+    <description>Recent content in traits on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 07 Apr 2023 13:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/traits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son los traits en la POO?</title>
+      <link>http://example.org/posts/traits-en-la-poo/</link>
+      <pubDate>Fri, 07 Apr 2023 13:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/traits-en-la-poo/</guid>
+      <description>En la programación orientada a objetos, un trait es una forma de reutilizar código que permite definir un conjunto de métodos que pueden ser utilizados por varias clases diferentes. Un trait se define como una colección de métodos que se pueden incluir en una o varias clases, lo que permite compartir funcionalidades comunes entre ellas.
+Al igual que las interfaces, los traits son una característica introducida en PHP para mejorar la reutilización de código y reducir la complejidad del código.</description>
+    </item>
+    
+  </channel>
+</rss>

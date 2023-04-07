@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>abstracción on Mikel Cantero</title>
+    <link>http://example.org/tags/abstracci%C3%B3n/</link>
+    <description>Recent content in abstracción on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 31 Mar 2023 12:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/abstracci%C3%B3n/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>La abstracción en la POO</title>
+      <link>http://example.org/posts/abstraccion-en-la-poo/</link>
+      <pubDate>Fri, 31 Mar 2023 12:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/abstraccion-en-la-poo/</guid>
+      <description>La abstracción es uno de los conceptos fundamentales de la programación orientada a objetos (POO). En términos simples, la abstracción es la capacidad de centrarse en los aspectos esenciales de un objeto o concepto y eliminar los detalles innecesarios o irrelevantes. La abstracción permite a los programadores diseñar sistemas complejos de manera más efectiva, simplificando la complejidad y promoviendo la modularidad y la reutilización de código.
+Ventajas y desventajas Link to heading La abstracción tiene varias ventajas en la POO:</description>
+    </item>
+    
+  </channel>
+</rss>

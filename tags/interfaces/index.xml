@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>interfaces on Mikel Cantero</title>
+    <link>http://example.org/tags/interfaces/</link>
+    <description>Recent content in interfaces on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 07 Apr 2023 12:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/interfaces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son las interfaces en la POO?</title>
+      <link>http://example.org/posts/interfaces-en-la-poo/</link>
+      <pubDate>Fri, 07 Apr 2023 12:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/interfaces-en-la-poo/</guid>
+      <description>Introducción Link to heading Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
+¿Qué son las interfaces? Link to heading En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
+    </item>
+    
+  </channel>
+</rss>
