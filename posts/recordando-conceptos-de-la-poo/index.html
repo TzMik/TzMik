@@ -30,7 +30,6 @@
 
 
 
-
 <link rel="canonical" href="http://example.org/posts/recordando-conceptos-de-la-poo/">
 
 
@@ -71,7 +70,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.92.2" />
+<meta name="generator" content="Hugo 0.111.3">
 
 
 
@@ -194,21 +193,20 @@
 </h2>
 <p>El constructor es un método especial de una clase que se utiliza para inicializar los objetos de esa clase. El constructor se llama automáticamente cuando se crea un objeto de la clase y se utiliza para asignar valores iniciales a las propiedades del objeto. En PHP, el constructor se define utilizando el método <code>__construct()</code>.</p>
 <p>Ejemplo de constructor en PHP:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
-    <span style="color:#fff;font-weight:bold">public</span> $nombre;
-    <span style="color:#fff;font-weight:bold">public</span> $edad;
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
-        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
-        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
-    }
-}
-
-$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
-<span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">nombre</span>; <span style="color:#007f7f">// output: Juan
-</span><span style="color:#007f7f"></span><span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">edad</span>; <span style="color:#007f7f">// output: 25
-</span><span style="color:#007f7f"></span>
-</code></pre></div><p>En este ejemplo, el constructor de la clase Persona se utiliza para asignar los valores iniciales de <code>$nombre</code> y <code>$edad</code> al objeto <code>$persona</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Persona</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __construct(<span style="color:#79c0ff">$nombre</span>, <span style="color:#79c0ff">$edad</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>nombre <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$persona</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Persona(<span style="color:#a5d6ff">&#34;Juan&#34;</span>, <span style="color:#a5d6ff">25</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">echo</span> <span style="color:#79c0ff">$persona</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>nombre; <span style="color:#8b949e;font-style:italic">// output: Juan
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span><span style="color:#ff7b72">echo</span> <span style="color:#79c0ff">$persona</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad; <span style="color:#8b949e;font-style:italic">// output: 25
+</span></span></span></code></pre></div><p>En este ejemplo, el constructor de la clase Persona se utiliza para asignar los valores iniciales de <code>$nombre</code> y <code>$edad</code> al objeto <code>$persona</code>.</p>
 <h2 id="destructor">
   Destructor
   <a class="heading-link" href="#destructor">
@@ -218,23 +216,23 @@ $persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span st
 </h2>
 <p>El destructor es un método especial de una clase que se utiliza para liberar los recursos utilizados por el objeto cuando ya no se necesita. El destructor se llama automáticamente cuando el objeto se destruye, ya sea porque se eliminó explícitamente o porque el programa ha terminado. En PHP, el destructor se define utilizando el método <code>__destruct()</code>.</p>
 <p>Ejemplo de destructor en PHP:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
-    <span style="color:#fff;font-weight:bold">public</span> $nombre;
-    <span style="color:#fff;font-weight:bold">public</span> $edad;
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
-        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
-        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
-    }
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __destruct() {
-        <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Objeto eliminado.&#34;</span>;
-    }
-}
-
-$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
-unset($persona); <span style="color:#007f7f">// Output: Objeto eliminado.
-</span></code></pre></div><p>En este ejemplo, el destructor de la clase Persona se utiliza para mostrar un mensaje cuando el objeto se elimina explícitamente utilizando la función <code>unset()</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Persona</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __construct(<span style="color:#79c0ff">$nombre</span>, <span style="color:#79c0ff">$edad</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>nombre <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __destruct() {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Objeto eliminado.&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$persona</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Persona(<span style="color:#a5d6ff">&#34;Juan&#34;</span>, <span style="color:#a5d6ff">25</span>);
+</span></span><span style="display:flex;"><span>unset(<span style="color:#79c0ff">$persona</span>); <span style="color:#8b949e;font-style:italic">// Output: Objeto eliminado.
+</span></span></span></code></pre></div><p>En este ejemplo, el destructor de la clase Persona se utiliza para mostrar un mensaje cuando el objeto se elimina explícitamente utilizando la función <code>unset()</code>.</p>
 <h2 id="static">
   Static
   <a class="heading-link" href="#static">
@@ -244,26 +242,26 @@ unset($persona); <span style="color:#007f7f">// Output: Objeto eliminado.
 </h2>
 <p>La palabra clave static se utiliza para definir propiedades y métodos que pertenecen a la clase en sí, en lugar de pertenecer a un objeto de la clase. Las propiedades y métodos estáticos se pueden utilizar sin crear una instancia de la clase y se accede a ellas utilizando el nombre de la clase en lugar del objeto. En PHP, se define una propiedad estática utilizando la palabra clave <code>static</code> antes del nombre de la propiedad.</p>
 <p>Ejemplo de propiedad estática en PHP:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> $contador = <span style="color:#ff0;font-weight:bold">0</span>;
-    <span style="color:#fff;font-weight:bold">public</span> $nombre;
-    <span style="color:#fff;font-weight:bold">public</span> $edad;
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
-        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
-        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
-        self::$contador++;
-    }
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">static</span> <span style="color:#fff;font-weight:bold">function</span> getContador() {
-        <span style="color:#fff;font-weight:bold">return</span> self::$contador;
-    }
-}
-
-$persona1 = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
-$persona2 = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Maria&#34;</span>, <span style="color:#ff0;font-weight:bold">30</span>);
-<span style="color:#fff;font-weight:bold">echo</span> Persona::<span style="color:#007f7f">getContador</span>(); <span style="color:#007f7f">// output: 2
-</span></code></pre></div><p>En este ejemplo, la propiedad <code>$contador</code> cuenta cuantas instancias de la clase <code>Persona</code> existen. En el constructor sumamos 1 al <code>$contador</code> cada vez que se crea una instancia de la calse <code>Persona</code> y con el método <code>getContador()</code> podemos imprimir el valor de ese contador.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Persona</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">static</span> <span style="color:#79c0ff">$contador</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">0</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __construct(<span style="color:#79c0ff">$nombre</span>, <span style="color:#79c0ff">$edad</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>nombre <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>        self<span style="color:#ff7b72;font-weight:bold">::</span><span style="color:#79c0ff">$contador</span><span style="color:#ff7b72;font-weight:bold">++</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">static</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">getContador</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> self<span style="color:#ff7b72;font-weight:bold">::</span><span style="color:#79c0ff">$contador</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$persona1</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Persona(<span style="color:#a5d6ff">&#34;Juan&#34;</span>, <span style="color:#a5d6ff">25</span>);
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$persona2</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Persona(<span style="color:#a5d6ff">&#34;Maria&#34;</span>, <span style="color:#a5d6ff">30</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">echo</span> Persona<span style="color:#ff7b72;font-weight:bold">::</span>getContador(); <span style="color:#8b949e;font-style:italic">// output: 2
+</span></span></span></code></pre></div><p>En este ejemplo, la propiedad <code>$contador</code> cuenta cuantas instancias de la clase <code>Persona</code> existen. En el constructor sumamos 1 al <code>$contador</code> cada vez que se crea una instancia de la calse <code>Persona</code> y con el método <code>getContador()</code> podemos imprimir el valor de ese contador.</p>
 <h2 id="constantes">
   Constantes
   <a class="heading-link" href="#constantes">
@@ -273,25 +271,25 @@ $persona2 = <span style="color:#fff;font-weight:bold">new</span> Persona(<span s
 </h2>
 <p>Las constantes son valores que no pueden cambiarse una vez que se definen. En POO, las constantes se utilizan para definir valores que son importantes para la clase, pero que no cambian durante la ejecución del programa. En PHP, se define una constante utilizando la palabra reservada <code>const</code>.</p>
 <p>Ejemplo de constante en PHP:</p>
-<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Persona {
-    <span style="color:#fff;font-weight:bold">const</span> ESPERANZA_VIDA = <span style="color:#ff0;font-weight:bold">80</span>;
-
-    <span style="color:#fff;font-weight:bold">public</span> $nombre;
-    <span style="color:#fff;font-weight:bold">public</span> $edad;
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($nombre, $edad) {
-        $this-&gt;<span style="color:#007f7f">nombre</span> = $nombre;
-        $this-&gt;<span style="color:#007f7f">edad</span> = $edad;
-    }
-
-    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> getEsperanzaVida() {
-        <span style="color:#fff;font-weight:bold">return</span> self::<span style="color:#007f7f">ESPERANZA_VIDA</span> - $this-&gt;<span style="color:#007f7f">edad</span>;
-    }
-}
-
-$persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span style="color:#0ff;font-weight:bold">&#34;Juan&#34;</span>, <span style="color:#ff0;font-weight:bold">25</span>);
-<span style="color:#fff;font-weight:bold">echo</span> $persona-&gt;<span style="color:#007f7f">getEsperanzaVida</span>(); <span style="color:#007f7f">// output: 55
-</span></code></pre></div><p>En este ejemplo, la constante <code>ESPERANZA_VIDA</code> se utiliza para definir la esperanza de vida de una persona en años. La función <code>getEsperanzaVida()</code> se utiliza para calcular la esperanza de vida restante de una persona.</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Persona</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">const</span> <span style="color:#79c0ff;font-weight:bold">ESPERANZA_VIDA</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">80</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __construct(<span style="color:#79c0ff">$nombre</span>, <span style="color:#79c0ff">$edad</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>nombre <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$nombre</span>;
+</span></span><span style="display:flex;"><span>        <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$edad</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">getEsperanzaVida</span>() {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">return</span> self<span style="color:#ff7b72;font-weight:bold">::</span>ESPERANZA_VIDA <span style="color:#ff7b72;font-weight:bold">-</span> <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>edad;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$persona</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Persona(<span style="color:#a5d6ff">&#34;Juan&#34;</span>, <span style="color:#a5d6ff">25</span>);
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">echo</span> <span style="color:#79c0ff">$persona</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>getEsperanzaVida(); <span style="color:#8b949e;font-style:italic">// output: 55
+</span></span></span></code></pre></div><p>En este ejemplo, la constante <code>ESPERANZA_VIDA</code> se utiliza para definir la esperanza de vida de una persona en años. La función <code>getEsperanzaVida()</code> se utiliza para calcular la esperanza de vida restante de una persona.</p>
 <p>En resumen, en la programación orientada a objetos, el constructor se utiliza para inicializar los objetos de una clase, el destructor se utiliza para liberar los recursos utilizados por el objeto cuando ya no se necesita, las propiedades y métodos estáticos se utilizan para pertenecer a la clase en sí, en lugar de pertenecer a un objeto de la clase, y las constantes se utilizan para definir valores que son importantes para la clase, pero que no cambian durante la ejecución del programa.</p>
 
       </div>
@@ -332,7 +330,7 @@ $persona = <span style="color:#fff;font-weight:bold">new</span> Persona(<span st
 
   
   
-  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
   
 
   

@@ -6,7 +6,37 @@
     <description>Recent content in programación orientada a objetos on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 31 Mar 2023 11:48:53 -0600</lastBuildDate><atom:link href="http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 13:08:53 -0600</lastBuildDate><atom:link href="http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son los traits en la POO?</title>
+      <link>http://example.org/posts/traits-en-la-poo/</link>
+      <pubDate>Fri, 07 Apr 2023 13:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/traits-en-la-poo/</guid>
+      <description>En la programación orientada a objetos, un trait es una forma de reutilizar código que permite definir un conjunto de métodos que pueden ser utilizados por varias clases diferentes. Un trait se define como una colección de métodos que se pueden incluir en una o varias clases, lo que permite compartir funcionalidades comunes entre ellas.
+Al igual que las interfaces, los traits son una característica introducida en PHP para mejorar la reutilización de código y reducir la complejidad del código.</description>
+    </item>
+    
+    <item>
+      <title>¿Qué son las interfaces en la POO?</title>
+      <link>http://example.org/posts/interfaces-en-la-poo/</link>
+      <pubDate>Fri, 07 Apr 2023 12:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/interfaces-en-la-poo/</guid>
+      <description>Introducción Link to heading Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
+¿Qué son las interfaces? Link to heading En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
+    </item>
+    
+    <item>
+      <title>La abstracción en la POO</title>
+      <link>http://example.org/posts/abstraccion-en-la-poo/</link>
+      <pubDate>Fri, 31 Mar 2023 12:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/abstraccion-en-la-poo/</guid>
+      <description>La abstracción es uno de los conceptos fundamentales de la programación orientada a objetos (POO). En términos simples, la abstracción es la capacidad de centrarse en los aspectos esenciales de un objeto o concepto y eliminar los detalles innecesarios o irrelevantes. La abstracción permite a los programadores diseñar sistemas complejos de manera más efectiva, simplificando la complejidad y promoviendo la modularidad y la reutilización de código.
+Ventajas y desventajas Link to heading La abstracción tiene varias ventajas en la POO:</description>
+    </item>
+    
     <item>
       <title>La herencia en la Programación Orientada a Objetos</title>
       <link>http://example.org/posts/herencia-en-la-poo/</link>
@@ -14,7 +44,7 @@
       
       <guid>http://example.org/posts/herencia-en-la-poo/</guid>
       <description>La herencia es un concepto fundamental en la programación orientada a objetos. En este post, exploraremos las ventajas y desventajas de la herencia en PHP, las diferencias entre las variables públicas, privadas y protegidas, la sobreescritura de métodos y variables en una clase hija, y los métodos y clases de tipo final.
-Introducción  Link to heading   La herencia es uno de los conceptos fundamentales de la programación orientada a objetos.</description>
+Introducción Link to heading La herencia es uno de los conceptos fundamentales de la programación orientada a objetos. En términos simples, permite a una clase derivar características y comportamientos de otra clase existente, llamada clase base o superclase (padre).</description>
     </item>
     
     <item>
@@ -52,7 +82,7 @@ A continuación, se explicará cada uno de estos métodos especiales de PHP, jun
       
       <guid>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</guid>
       <description>En la actualidad la Programación Orientada a Objetos se ha vuelto una especie de estandar en la industria. En este post veremos brevemente las principales 4 razones detrás de esto:
-La encapsulación  Link to heading   La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
+La encapsulación Link to heading La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
     </item>
     
   </channel>

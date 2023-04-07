@@ -14,7 +14,7 @@
       
       <guid>http://example.org/posts/herencia-en-la-poo/</guid>
       <description>La herencia es un concepto fundamental en la programación orientada a objetos. En este post, exploraremos las ventajas y desventajas de la herencia en PHP, las diferencias entre las variables públicas, privadas y protegidas, la sobreescritura de métodos y variables en una clase hija, y los métodos y clases de tipo final.
-Introducción  Link to heading   La herencia es uno de los conceptos fundamentales de la programación orientada a objetos.</description>
+Introducción Link to heading La herencia es uno de los conceptos fundamentales de la programación orientada a objetos. En términos simples, permite a una clase derivar características y comportamientos de otra clase existente, llamada clase base o superclase (padre).</description>
     </item>
     
   </channel>
