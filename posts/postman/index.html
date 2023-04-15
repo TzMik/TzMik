@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+  Utiliza Postman para crear API RESTs · Mikel Cantero
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Mikel Cantero">
+<meta name="description" content="¿Qué es Postman y para qué se utiliza? Eso intentaremos responder en esta entrada de blog">
+<meta name="keywords" content="blog,desarrollo web,ingeniería de software">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Utiliza Postman para crear API RESTs"/>
+<meta name="twitter:description" content="¿Qué es Postman y para qué se utiliza? Eso intentaremos responder en esta entrada de blog"/>
+
+<meta property="og:title" content="Utiliza Postman para crear API RESTs" />
+<meta property="og:description" content="¿Qué es Postman y para qué se utiliza? Eso intentaremos responder en esta entrada de blog" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/postman/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-15T12:30:10-06:00" />
+<meta property="article:modified_time" content="2023-04-15T12:30:10-06:00" />
+
+
+
+
+<link rel="canonical" href="http://example.org/posts/postman/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Mikel Cantero
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">Sobre mí</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://example.org/posts/postman/">
+              Utiliza Postman para crear API RESTs
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-04-15T12:30:10-06:00">
+                abril 15, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              2 minutos de lectura.
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/api/">api</a>
+      <span class="separator">•</span>
+    <a href="/categories/postman/">postman</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/api/">api</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/postman/">postman</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Postman es una herramienta de colaboración para el desarrollo de API (Interfaz de Programación de Aplicaciones) que permite a los desarrolladores probar, documentar y compartir las API de sus aplicaciones de una manera sencilla y eficiente.</p>
+<p>Postman funciona como una herramienta de cliente HTTP que permite enviar solicitudes HTTP (GET, POST, PUT, DELETE, etc.) a una API específica y recibir respuestas en formato JSON o XML. La herramienta proporciona una interfaz gráfica de usuario (GUI) que permite a los usuarios escribir y enviar solicitudes HTTP sin tener que escribir código manualmente.</p>
+<p>Además de enviar solicitudes HTTP, Postman también permite a los usuarios crear colecciones de solicitudes, guardar y compartir solicitudes previas y crear scripts para automatizar tareas repetitivas en la API.</p>
+<p>Con Postman, los desarrolladores pueden hacer pruebas de sus API, validar los resultados y verificar la funcionalidad de la API antes de su lanzamiento. La herramienta también facilita la creación de documentación clara y completa de la API, lo que facilita a los usuarios su uso y comprensión.</p>
+<p>Postman se integra con una variedad de herramientas y servicios, como Git, Jenkins, AWS, y muchos otros, lo que hace que la colaboración y el trabajo en equipo sean mucho más fáciles y eficientes.</p>
+<p>En resumen, Postman es una herramienta esencial para los desarrolladores de API que permite enviar solicitudes HTTP, probar y validar la funcionalidad de la API, y crear documentación clara y completa de la misma. Con una interfaz gráfica de usuario intuitiva y una amplia gama de características, Postman es una herramienta poderosa para el desarrollo y la colaboración de API.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Mikel Cantero 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

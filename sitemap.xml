@@ -2,13 +2,46 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://example.org/posts/que-son-las-cli/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/tags/api/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/api/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/c%C3%B3digos-de-estado-http/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/http/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/http/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/postman/</loc>
+    <lastmod>2023-04-15T12:30:10-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/postman/</loc>
+    <lastmod>2023-04-15T12:30:10-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/postman/</loc>
+    <lastmod>2023-04-15T12:30:10-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/que-son-las-cli/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/cli/</loc>
@@ -17,25 +50,13 @@
     <loc>http://example.org/categories/cli/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/tags/sistema-operativo/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/sistema-operativo/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/posts/que-son-los-sdk/</loc>
-    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/api/</loc>
     <lastmod>2023-04-15T12:22:00-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/sdk/</loc>

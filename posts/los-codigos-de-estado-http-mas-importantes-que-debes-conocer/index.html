@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+  Los códigos de estado HTTP más importantes que debes conocer · Mikel Cantero
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Mikel Cantero">
+<meta name="description" content="En este post descubriremos cuáles son los códigos de estado más usados en las APIs">
+<meta name="keywords" content="blog,desarrollo web,ingeniería de software">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Los códigos de estado HTTP más importantes que debes conocer"/>
+<meta name="twitter:description" content="En este post descubriremos cuáles son los códigos de estado más usados en las APIs"/>
+
+<meta property="og:title" content="Los códigos de estado HTTP más importantes que debes conocer" />
+<meta property="og:description" content="En este post descubriremos cuáles son los códigos de estado más usados en las APIs" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-15T12:33:58-06:00" />
+<meta property="article:modified_time" content="2023-04-15T12:33:58-06:00" />
+
+
+
+
+<link rel="canonical" href="http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Mikel Cantero
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">Sobre mí</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/">
+              Los códigos de estado HTTP más importantes que debes conocer
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-04-15T12:33:58-06:00">
+                abril 15, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3 minutos de lectura.
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/api/">api</a>
+      <span class="separator">•</span>
+    <a href="/categories/http/">http</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/api/">api</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/http/">http</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/c%C3%B3digos-de-estado-http/">códigos de estado http</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Los códigos de estado HTTP son una forma de comunicación entre el servidor y el cliente en una solicitud HTTP. Estos códigos son una forma de indicar el resultado de la solicitud y proporcionan información útil para el cliente y el servidor. Aquí están los códigos de estado HTTP más importantes que todo desarrollador web debería conocer.</p>
+<h2 id="1xx---respuestas-informativas">
+  1xx - Respuestas informativas
+  <a class="heading-link" href="#1xx---respuestas-informativas">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Los códigos de estado en la serie 1xx son respuestas informativas, lo que significa que el servidor está respondiendo a una solicitud preliminar del cliente y que aún no ha comenzado a procesar la solicitud.</p>
+<h3 id="100---continuar">
+  100 - Continuar
+  <a class="heading-link" href="#100---continuar">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 100 se utiliza para indicar que el servidor ha recibido la solicitud y que el cliente puede continuar con la siguiente parte de la solicitud.</p>
+<h2 id="2xx---respuestas-satisfactorias">
+  2xx - Respuestas satisfactorias
+  <a class="heading-link" href="#2xx---respuestas-satisfactorias">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Los códigos de estado en la serie 2xx son respuestas satisfactorias, lo que significa que el servidor ha procesado con éxito la solicitud del cliente.</p>
+<h3 id="200---ok">
+  200 - OK
+  <a class="heading-link" href="#200---ok">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 200 se utiliza para indicar que la solicitud se ha completado correctamente y que se ha enviado una respuesta.</p>
+<h3 id="201---creado">
+  201 - Creado
+  <a class="heading-link" href="#201---creado">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 201 se utiliza para indicar que la solicitud ha sido procesada con éxito y que se ha creado un nuevo recurso.</p>
+<h2 id="3xx---redirecciones">
+  3xx - Redirecciones
+  <a class="heading-link" href="#3xx---redirecciones">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Los códigos de estado en la serie 3xx indican que la solicitud del cliente se ha redirigido a otra ubicación.</p>
+<h3 id="301---movido-permanentemente">
+  301 - Movido permanentemente
+  <a class="heading-link" href="#301---movido-permanentemente">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 301 se utiliza para indicar que la ubicación de un recurso ha sido cambiada permanentemente.</p>
+<h3 id="302---encontrado">
+  302 - Encontrado
+  <a class="heading-link" href="#302---encontrado">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 302 se utiliza para indicar que la ubicación de un recurso ha sido cambiada temporalmente.</p>
+<h2 id="4xx---errores-del-cliente">
+  4xx - Errores del cliente
+  <a class="heading-link" href="#4xx---errores-del-cliente">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Los códigos de estado en la serie 4xx indican que la solicitud del cliente no se ha podido procesar correctamente debido a un error del cliente.</p>
+<h3 id="400---solicitud-incorrecta">
+  400 - Solicitud incorrecta
+  <a class="heading-link" href="#400---solicitud-incorrecta">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 400 se utiliza para indicar que la solicitud del cliente no se puede procesar debido a una solicitud incorrecta.</p>
+<h3 id="401---no-autorizado">
+  401 - No autorizado
+  <a class="heading-link" href="#401---no-autorizado">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 401 se utiliza para indicar que el cliente no está autorizado para acceder al recurso solicitado.</p>
+<h3 id="404---no-encontrado">
+  404 - No encontrado
+  <a class="heading-link" href="#404---no-encontrado">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 404 se utiliza para indicar que el recurso solicitado no se puede encontrar en el servidor.</p>
+<h2 id="5xx---errores-del-servidor">
+  5xx - Errores del servidor
+  <a class="heading-link" href="#5xx---errores-del-servidor">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Los códigos de estado en la serie 5xx indican que la solicitud del cliente no se ha podido procesar correctamente debido a un error en el servidor.</p>
+<h3 id="500---error-interno-del-servidor">
+  500 - Error interno del servidor
+  <a class="heading-link" href="#500---error-interno-del-servidor">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 500 se utiliza para indicar que se ha producido un error interno en el servidor y que no se puede procesar la solicitud.</p>
+<h3 id="503---servicio-no-disponible">
+  503 - Servicio no disponible
+  <a class="heading-link" href="#503---servicio-no-disponible">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>El código de estado 503 se utiliza para indicar que el servidor no está disponible temporalmente para procesar la solicitud.</p>
+<p>En resumen, estos son algunos de los códigos de estado HTTP más importantes que debes conocer. Conocer estos códigos de estado te ayudará a identificar rápidamente los problemas de solicitud y respuesta en tu aplicación web, lo que te permitirá solucionar problemas y mejorar la experiencia del usuario.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Mikel Cantero 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

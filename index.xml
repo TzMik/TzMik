@@ -6,7 +6,27 @@
     <description>Recent content on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 15 Apr 2023 12:25:17 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 12:33:58 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Los códigos de estado HTTP más importantes que debes conocer</title>
+      <link>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</link>
+      <pubDate>Sat, 15 Apr 2023 12:33:58 -0600</pubDate>
+      
+      <guid>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</guid>
+      <description>Los códigos de estado HTTP son una forma de comunicación entre el servidor y el cliente en una solicitud HTTP. Estos códigos son una forma de indicar el resultado de la solicitud y proporcionan información útil para el cliente y el servidor. Aquí están los códigos de estado HTTP más importantes que todo desarrollador web debería conocer.
+1xx - Respuestas informativas Link to heading Los códigos de estado en la serie 1xx son respuestas informativas, lo que significa que el servidor está respondiendo a una solicitud preliminar del cliente y que aún no ha comenzado a procesar la solicitud.</description>
+    </item>
+    
+    <item>
+      <title>Utiliza Postman para crear API RESTs</title>
+      <link>http://example.org/posts/postman/</link>
+      <pubDate>Sat, 15 Apr 2023 12:30:10 -0600</pubDate>
+      
+      <guid>http://example.org/posts/postman/</guid>
+      <description>Postman es una herramienta de colaboración para el desarrollo de API (Interfaz de Programación de Aplicaciones) que permite a los desarrolladores probar, documentar y compartir las API de sus aplicaciones de una manera sencilla y eficiente.
+Postman funciona como una herramienta de cliente HTTP que permite enviar solicitudes HTTP (GET, POST, PUT, DELETE, etc.) a una API específica y recibir respuestas en formato JSON o XML. La herramienta proporciona una interfaz gráfica de usuario (GUI) que permite a los usuarios escribir y enviar solicitudes HTTP sin tener que escribir código manualmente.</description>
+    </item>
+    
     <item>
       <title>¿Qué son las CLI?</title>
       <link>http://example.org/posts/que-son-las-cli/</link>

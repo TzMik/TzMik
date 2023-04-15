@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>http on Mikel Cantero</title>
+    <link>http://example.org/categories/http/</link>
+    <description>Recent content in http on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 15 Apr 2023 12:33:58 -0600</lastBuildDate><atom:link href="http://example.org/categories/http/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Los códigos de estado HTTP más importantes que debes conocer</title>
+      <link>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</link>
+      <pubDate>Sat, 15 Apr 2023 12:33:58 -0600</pubDate>
+      
+      <guid>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</guid>
+      <description>Los códigos de estado HTTP son una forma de comunicación entre el servidor y el cliente en una solicitud HTTP. Estos códigos son una forma de indicar el resultado de la solicitud y proporcionan información útil para el cliente y el servidor. Aquí están los códigos de estado HTTP más importantes que todo desarrollador web debería conocer.
+1xx - Respuestas informativas Link to heading Los códigos de estado en la serie 1xx son respuestas informativas, lo que significa que el servidor está respondiendo a una solicitud preliminar del cliente y que aún no ha comenzado a procesar la solicitud.</description>
+    </item>
+    
+  </channel>
+</rss>

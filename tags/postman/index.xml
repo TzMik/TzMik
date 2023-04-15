@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>postman on Mikel Cantero</title>
+    <link>http://example.org/tags/postman/</link>
+    <description>Recent content in postman on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 15 Apr 2023 12:30:10 -0600</lastBuildDate><atom:link href="http://example.org/tags/postman/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Utiliza Postman para crear API RESTs</title>
+      <link>http://example.org/posts/postman/</link>
+      <pubDate>Sat, 15 Apr 2023 12:30:10 -0600</pubDate>
+      
+      <guid>http://example.org/posts/postman/</guid>
+      <description>Postman es una herramienta de colaboración para el desarrollo de API (Interfaz de Programación de Aplicaciones) que permite a los desarrolladores probar, documentar y compartir las API de sus aplicaciones de una manera sencilla y eficiente.
+Postman funciona como una herramienta de cliente HTTP que permite enviar solicitudes HTTP (GET, POST, PUT, DELETE, etc.) a una API específica y recibir respuestas en formato JSON o XML. La herramienta proporciona una interfaz gráfica de usuario (GUI) que permite a los usuarios escribir y enviar solicitudes HTTP sin tener que escribir código manualmente.</description>
+    </item>
+    
+  </channel>
+</rss>
