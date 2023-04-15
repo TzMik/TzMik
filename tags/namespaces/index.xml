@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>namespaces on Mikel Cantero</title>
+    <link>http://example.org/tags/namespaces/</link>
+    <description>Recent content in namespaces on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Fri, 07 Apr 2023 15:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/namespaces/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Para qué sirven los namespaces en PHP?</title>
+      <link>http://example.org/posts/namespaces-en-php/</link>
+      <pubDate>Fri, 07 Apr 2023 15:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/namespaces-en-php/</guid>
+      <description>Los namespaces son una funcionalidad introducida en PHP 5.3 para ayudar a los desarrolladores a organizar y estructurar sus aplicaciones. Los namespaces permiten definir un espacio de nombres (namespace) para un conjunto de clases, funciones y constantes, lo que ayuda a evitar conflictos de nombres y permite una mejor organización y mantenimiento del código.
+En PHP, los namespaces se definen mediante la palabra clave namespace, seguida del nombre del espacio de nombres y su definición.</description>
+    </item>
+    
+  </channel>
+</rss>

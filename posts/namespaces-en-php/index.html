@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+  ¿Para qué sirven los namespaces en PHP? · Mikel Cantero
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Mikel Cantero">
+<meta name="description" content="En este post veremos para qué sirven y en qué caso usar los namespaces en PHP">
+<meta name="keywords" content="blog,desarrollo web,ingeniería de software">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="¿Para qué sirven los namespaces en PHP?"/>
+<meta name="twitter:description" content="En este post veremos para qué sirven y en qué caso usar los namespaces en PHP"/>
+
+<meta property="og:title" content="¿Para qué sirven los namespaces en PHP?" />
+<meta property="og:description" content="En este post veremos para qué sirven y en qué caso usar los namespaces en PHP" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/namespaces-en-php/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-07T15:08:53-06:00" />
+<meta property="article:modified_time" content="2023-04-07T15:08:53-06:00" />
+
+
+
+
+<link rel="canonical" href="http://example.org/posts/namespaces-en-php/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Mikel Cantero
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">Sobre mí</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://example.org/posts/namespaces-en-php/">
+              ¿Para qué sirven los namespaces en PHP?
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-04-07T15:08:53-06:00">
+                abril 7, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              4 minutos de lectura.
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/php/">php</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/php/">php</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/namespaces/">namespaces</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p>Los namespaces son una funcionalidad introducida en PHP 5.3 para ayudar a los desarrolladores a organizar y estructurar sus aplicaciones. <strong>Los namespaces permiten definir un espacio de nombres (namespace) para un conjunto de clases, funciones y constantes, lo que ayuda a evitar conflictos de nombres y permite una mejor organización y mantenimiento del código</strong>.</p>
+<p>En PHP, los namespaces se definen mediante la palabra clave <code>namespace</code>, seguida del nombre del espacio de nombres y su definición. Por ejemplo, si se desea definir un espacio de nombres <code>MiApp</code>, se puede hacer lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">namespace</span> MiApp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">MiClase</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la clase
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">miFuncion</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la función
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> <span style="color:#79c0ff;font-weight:bold">MI_CONSTANTE</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;valor&#34;</span>;
+</span></span></code></pre></div><p>Una vez definido un espacio de nombres, se puede utilizar en otras partes del código mediante la palabra clave <code>use</code>. Por ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">use</span> MiApp\MiClase;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$objeto</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> MiClase();
+</span></span></code></pre></div><p>En este ejemplo, se utiliza la clase <code>MiClase</code> definida en el espacio de nombres <code>MiApp</code>.</p>
+<p><strong>La principal ventaja de utilizar namespaces es que permite evitar conflictos de nombres y organizar el código de manera más clara y coherente</strong>. Por ejemplo, si se tiene una aplicación con varias clases y funciones que comparten nombres similares, es posible que se produzcan conflictos de nombres y errores al intentar utilizarlas en conjunto. Al definir espacios de nombres, se puede separar cada conjunto de clases y funciones en su propio espacio de nombres, lo que evita estos conflictos y facilita la comprensión y el mantenimiento del código.</p>
+<p>Además, los namespaces también permiten utilizar clases y funciones de otros paquetes y bibliotecas sin tener que preocuparse por conflictos de nombres. Por ejemplo, si se utiliza una biblioteca de terceros que define sus propios nombres de clase y función, se puede utilizar un espacio de nombres para evitar conflictos con el código de la aplicación.</p>
+<p>Sin embargo, también hay algunas desventajas al utilizar namespaces. En primer lugar, la utilización excesiva de espacios de nombres puede aumentar la complejidad del código y hacerlo más difícil de entender y mantener. Además, puede ser necesario utilizar la palabra clave <code>use</code> repetidamente en diferentes partes del código para utilizar clases y funciones de otros espacios de nombres, lo que puede hacer que el código sea más verboso y difícil de leer.</p>
+<p>En resumen, los namespaces son una funcionalidad importante en PHP que permite evitar conflictos de nombres y organizar el código de manera más clara y coherente. Al utilizar namespaces, se puede evitar la duplicación de nombres y mejorar la legibilidad y mantenibilidad del código. Sin embargo, es importante utilizarlos con cuidado y de manera consciente para evitar introducir complejidad innecesaria en el código.</p>
+<p>Aquí te presento un ejemplo de uso de namespaces en PHP. Supongamos que se tiene una aplicación que utiliza una biblioteca externa llamada <code>MiLibreria</code>. Para evitar conflictos de nombres, se puede utilizar un espacio de nombres para la biblioteca y otro para la aplicación. Por ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">namespace</span> MiLibreria;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">MiClase</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la clase
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">miFuncion</span>() {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la función
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">const</span> <span style="color:#79c0ff;font-weight:bold">MI_CONSTANTE</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#a5d6ff">&#34;valor&#34;</span>;
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">namespace</span> MiApp;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">use</span> MiLibreria\MiClase;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$objeto</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> MiClase();
+</span></span></code></pre></div><p>En este ejemplo, se define el espacio de nombres <code>MiLibreria</code> para la biblioteca externa <code>MiLibreria</code> y se definen una clase, una función y una constante en ese espacio de nombres. Luego, en el espacio de nombres <code>MiApp</code>, se utiliza la palabra clave <code>use</code> para importar la clase <code>MiClase</code> desde el espacio de nombres <code>MiLibreria</code>. De esta manera, se pueden utilizar las clases y funciones de la biblioteca externa sin preocuparse por conflictos de nombres con el código de la aplicación.</p>
+<p>Otro ejemplo de uso de namespaces en PHP es cuando se tienen dos clases con el mismo nombre en diferentes paquetes. En este caso, se puede utilizar un espacio de nombres para cada paquete y así evitar conflictos de nombres. Por ejemplo:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">namespace</span> Paquete1;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">MiClase</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la clase
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">namespace</span> Paquete2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">MiClase</span> {
+</span></span><span style="display:flex;"><span>  <span style="color:#8b949e;font-style:italic">// código para la clase
+</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>}
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">use</span> Paquete1\MiClase <span style="color:#ff7b72">as</span> Clase1;
+</span></span><span style="display:flex;"><span><span style="color:#ff7b72">use</span> Paquete2\MiClase <span style="color:#ff7b72">as</span> Clase2;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$objeto1</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Clase1();
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$objeto2</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Clase2();
+</span></span></code></pre></div><p>En este ejemplo, se definen dos clases con el mismo nombre <code>MiClase</code> en dos paquetes diferentes, <code>Paquete1</code> y <code>Paquete2</code>. Luego, se utiliza la palabra clave &ldquo;use&rdquo; para importar ambas clases en el espacio de nombres actual y se les asignan alias diferentes para evitar conflictos de nombres. Finalmente, se crean dos objetos, uno para cada clase, utilizando los alias asignados.</p>
+<p>En conclusión, los namespaces son una funcionalidad importante en PHP que permite evitar conflictos de nombres y organizar el código de manera más clara y coherente. Al utilizarlos de manera consciente y eficiente, se puede mejorar la legibilidad y mantenibilidad del código y facilitar la integración de bibliotecas y paquetes externos en la aplicación.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Mikel Cantero 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

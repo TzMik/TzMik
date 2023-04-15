@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <title>
+  ¿Qué son las clases anónimas? · Mikel Cantero
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Mikel Cantero">
+<meta name="description" content="En este post veremos para qué sirven y qué son las clases anónimas">
+<meta name="keywords" content="blog,desarrollo web,ingeniería de software">
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="¿Qué son las clases anónimas?"/>
+<meta name="twitter:description" content="En este post veremos para qué sirven y qué son las clases anónimas"/>
+
+<meta property="og:title" content="¿Qué son las clases anónimas?" />
+<meta property="og:description" content="En este post veremos para qué sirven y qué son las clases anónimas" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://example.org/posts/que-son-las-clases-an%C3%B3nimas/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2023-04-07T16:08:53-06:00" />
+<meta property="article:modified_time" content="2023-04-07T16:08:53-06:00" />
+
+
+
+
+<link rel="canonical" href="http://example.org/posts/que-son-las-clases-an%C3%B3nimas/">
+
+
+<link rel="preload" href="/fonts/forkawesome-webfont.woff2?v=1.2.0" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.min.0669b62fc2c181a12a4ba10be9984e385c9a5e83dc7cb7ae3759ad0b98d7e8b2.css" integrity="sha256-Bmm2L8LBgaEqS6EL6ZhOOFyaXoPcfLeuN1mtC5jX6LI=" crossorigin="anonymous" media="screen" />
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.min.f6534b0b446b75d9b6ad77a97d43ede2ddaeff1b6e2361fb7198d6f8fcb7f83f.css" integrity="sha256-9lNLC0Rrddm2rXepfUPt4t2u/xtuI2H7cZjW&#43;Py3&#43;D8=" crossorigin="anonymous" media="screen" />
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/png" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+<meta name="generator" content="Hugo 0.111.3">
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    <a class="navigation-title" href="/">
+      Mikel Cantero
+    </a>
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/posts/">Blog</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link" href="/about/">Sobre mí</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://example.org/posts/que-son-las-clases-an%C3%B3nimas/">
+              ¿Qué son las clases anónimas?
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa fa-calendar" aria-hidden="true"></i>
+              <time datetime="2023-04-07T16:08:53-06:00">
+                abril 7, 2023
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa fa-clock-o" aria-hidden="true"></i>
+              3 minutos de lectura.
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa fa-folder" aria-hidden="true"></i>
+    <a href="/categories/programaci%C3%B3n-orientada-a-objetos/">programación orientada a objetos</a>
+      <span class="separator">•</span>
+    <a href="/categories/php/">php</a></div>
+
+          <div class="tags">
+  <i class="fa fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="/tags/programaci%C3%B3n-orientada-a-objetos/">programación orientada a objetos</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/php/">php</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="/tags/clases-an%C3%B3nimas/">clases anónimas</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <p><strong>Una clase anónima es una clase que se define de forma anónima, es decir, sin un nombre explícito</strong>. En PHP, las clases anónimas se crean utilizando la palabra clave <code>new</code> seguida de la definición de la clase entre paréntesis. La definición de la clase puede incluir propiedades, métodos y otros elementos de la POO.</p>
+<p>Las clases anónimas <strong>se utilizan principalmente para crear objetos de forma rápida y sencilla</strong>, sin necesidad de definir una clase completa. Además, las clases anónimas <strong>pueden ser útiles en situaciones en las que se necesitan objetos temporales que no se utilizarán en otros lugares del código</strong>.</p>
+<h2 id="ventajas-y-desventajas">
+  Ventajas y desventajas
+  <a class="heading-link" href="#ventajas-y-desventajas">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Las clases anónimas ofrecen varias ventajas, entre ellas:</p>
+<ul>
+<li>
+<p><strong>Flexibilidad:</strong> las clases anónimas permiten la creación de objetos sin necesidad de definir una clase completa, lo que las hace ideales para situaciones en las que se necesitan objetos temporales o específicos para una tarea en particular.</p>
+</li>
+<li>
+<p><strong>Menos código:</strong> al no ser necesario definir una clase completa, el uso de clases anónimas reduce la cantidad de código necesario para crear objetos.</p>
+</li>
+<li>
+<p><strong>Funcionalidad de alto nivel:</strong> las clases anónimas pueden ser utilizadas para implementar características de alto nivel, como closures, que son funciones que pueden ser almacenadas y pasadas como argumentos a otras funciones.</p>
+</li>
+</ul>
+<p>Sin embargo, también existen algunas desventajas en el uso de clases anónimas, como:</p>
+<ul>
+<li>
+<p><strong>Dificultad de mantenimiento:</strong> las clases anónimas pueden ser más difíciles de mantener y entender que las clases explícitamente definidas, especialmente en código más complejo.</p>
+</li>
+<li>
+<p><strong>Limitaciones en la reutilización:</strong> las clases anónimas no pueden ser reutilizadas en otros lugares del código, lo que puede limitar su utilidad en algunos casos.</p>
+</li>
+</ul>
+<h2 id="ejemplo-en-php">
+  Ejemplo en PHP
+  <a class="heading-link" href="#ejemplo-en-php">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Un ejemplo común de uso de clases anónimas en PHP es en la definición de closures. Las closures son funciones que pueden ser almacenadas y pasadas como argumentos a otras funciones, y pueden ser utilizadas para implementar características avanzadas de la POO, como el patrón de diseño de Strategy.</p>
+<p>Supongamos que tenemos la siguiente función <code>filtrar</code> que toma un array y una función de filtro como argumentos, y devuelve un nuevo array que contiene sólo los elementos que cumplen con la condición del filtro:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">filtrar</span>(<span style="color:#79c0ff">$array</span>, <span style="color:#79c0ff">$filtro</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#79c0ff">$resultado</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">array</span>();
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">foreach</span> (<span style="color:#79c0ff">$array</span> <span style="color:#ff7b72">as</span> <span style="color:#79c0ff">$elemento</span>) {
+</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">if</span> (<span style="color:#79c0ff">$filtro</span>(<span style="color:#79c0ff">$elemento</span>)) {
+</span></span><span style="display:flex;"><span>            <span style="color:#79c0ff">$resultado</span>[] <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$elemento</span>;
+</span></span><span style="display:flex;"><span>        }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">$resultado</span>;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><p>Para utilizar esta función, podemos definir una closure que implemente el filtro que deseamos. Por ejemplo, para filtrar todos los elementos mayores que 10 de un array, podemos utilizar la siguiente clase anónima:</p>
+<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#79c0ff">$array</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">array</span>(<span style="color:#a5d6ff">5</span>, <span style="color:#a5d6ff">10</span>, <span style="color:#a5d6ff">15</span>, <span style="color:#a5d6ff">20</span>);
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$filtro</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> <span style="color:#ff7b72">class</span> <span style="color:#f85149">{</span>
+</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __invoke(<span style="color:#79c0ff">$elemento</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">$elemento</span> <span style="color:#ff7b72;font-weight:bold">&gt;</span> <span style="color:#a5d6ff">10</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>};
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$resultado</span> <span style="color:#ff7b72;font-weight:bold">=</span> filtrar(<span style="color:#79c0ff">$array</span>, <span style="color:#79c0ff">$filtro</span>);
+</span></span></code></pre></div><p>En este ejemplo, hemos creado una clase anónima que implementa el filtro deseado utilizando el método <code>__invoke</code>, que permite que la clase se pueda utilizar como una función. Después, pasamos la clase anónima como argumento a la función <code>filtrar</code> para que aplique el filtro al array.</p>
+<h2 id="conclusión">
+  Conclusión
+  <a class="heading-link" href="#conclusi%c3%b3n">
+    <i class="fa fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>En resumen, las clases anónimas son una característica útil de la POO en PHP que permiten la creación de objetos de forma rápida y sencilla, sin necesidad de definir una clase completa. Si bien tienen algunas limitaciones y pueden ser más difíciles de mantener que las clases explícitamente definidas, las clases anónimas son ideales para situaciones en las que se necesitan objetos temporales o específicos para una tarea en particular. Además, las clases anónimas se pueden utilizar para implementar características avanzadas de la POO, como closures y el patrón de diseño Strategy.</p>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        
+        
+        
+        
+      </footer>
+    </article>
+
+    
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2023
+     Mikel Cantero 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

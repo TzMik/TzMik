@@ -6,7 +6,37 @@
     <description>Recent content in Posts on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 07 Apr 2023 13:08:53 -0600</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 16:08:53 -0600</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son las clases anónimas?</title>
+      <link>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</link>
+      <pubDate>Fri, 07 Apr 2023 16:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</guid>
+      <description>Una clase anónima es una clase que se define de forma anónima, es decir, sin un nombre explícito. En PHP, las clases anónimas se crean utilizando la palabra clave new seguida de la definición de la clase entre paréntesis. La definición de la clase puede incluir propiedades, métodos y otros elementos de la POO.
+Las clases anónimas se utilizan principalmente para crear objetos de forma rápida y sencilla, sin necesidad de definir una clase completa.</description>
+    </item>
+    
+    <item>
+      <title>¿Para qué sirven los namespaces en PHP?</title>
+      <link>http://example.org/posts/namespaces-en-php/</link>
+      <pubDate>Fri, 07 Apr 2023 15:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/namespaces-en-php/</guid>
+      <description>Los namespaces son una funcionalidad introducida en PHP 5.3 para ayudar a los desarrolladores a organizar y estructurar sus aplicaciones. Los namespaces permiten definir un espacio de nombres (namespace) para un conjunto de clases, funciones y constantes, lo que ayuda a evitar conflictos de nombres y permite una mejor organización y mantenimiento del código.
+En PHP, los namespaces se definen mediante la palabra clave namespace, seguida del nombre del espacio de nombres y su definición.</description>
+    </item>
+    
+    <item>
+      <title>Diferencias entre clases abstractas y traits</title>
+      <link>http://example.org/posts/diferencias-entre-clases-abstractas-y-traits/</link>
+      <pubDate>Fri, 07 Apr 2023 14:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/diferencias-entre-clases-abstractas-y-traits/</guid>
+      <description>Tanto una clase abstracta como un trait son formas de reutilizar código en la programación orientada a objetos, pero hay algunas diferencias importantes entre ellos.
+Una clase abstracta es una clase que no se puede instanciar directamente, sino que se utiliza como una plantilla para crear otras clases que heredan de ella. Las clases abstractas pueden contener métodos abstractos (sin implementación) y métodos concretos (con implementación), así como propiedades, constantes y cualquier otra definición de clase.</description>
+    </item>
+    
     <item>
       <title>¿Qué son los traits en la POO?</title>
       <link>http://example.org/posts/traits-en-la-poo/</link>

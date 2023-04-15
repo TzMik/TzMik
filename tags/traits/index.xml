@@ -6,7 +6,17 @@
     <description>Recent content in traits on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 07 Apr 2023 13:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/traits/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 14:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/traits/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Diferencias entre clases abstractas y traits</title>
+      <link>http://example.org/posts/diferencias-entre-clases-abstractas-y-traits/</link>
+      <pubDate>Fri, 07 Apr 2023 14:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/diferencias-entre-clases-abstractas-y-traits/</guid>
+      <description>Tanto una clase abstracta como un trait son formas de reutilizar código en la programación orientada a objetos, pero hay algunas diferencias importantes entre ellos.
+Una clase abstracta es una clase que no se puede instanciar directamente, sino que se utiliza como una plantilla para crear otras clases que heredan de ella. Las clases abstractas pueden contener métodos abstractos (sin implementación) y métodos concretos (con implementación), así como propiedades, constantes y cualquier otra definición de clase.</description>
+    </item>
+    
     <item>
       <title>¿Qué son los traits en la POO?</title>
       <link>http://example.org/posts/traits-en-la-poo/</link>

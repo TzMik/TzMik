@@ -6,7 +6,27 @@
     <description>Recent content in php on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 31 Mar 2023 10:45:34 -0600</lastBuildDate><atom:link href="http://example.org/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 07 Apr 2023 16:08:53 -0600</lastBuildDate><atom:link href="http://example.org/categories/php/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son las clases anónimas?</title>
+      <link>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</link>
+      <pubDate>Fri, 07 Apr 2023 16:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</guid>
+      <description>Una clase anónima es una clase que se define de forma anónima, es decir, sin un nombre explícito. En PHP, las clases anónimas se crean utilizando la palabra clave new seguida de la definición de la clase entre paréntesis. La definición de la clase puede incluir propiedades, métodos y otros elementos de la POO.
+Las clases anónimas se utilizan principalmente para crear objetos de forma rápida y sencilla, sin necesidad de definir una clase completa.</description>
+    </item>
+    
+    <item>
+      <title>¿Para qué sirven los namespaces en PHP?</title>
+      <link>http://example.org/posts/namespaces-en-php/</link>
+      <pubDate>Fri, 07 Apr 2023 15:08:53 -0600</pubDate>
+      
+      <guid>http://example.org/posts/namespaces-en-php/</guid>
+      <description>Los namespaces son una funcionalidad introducida en PHP 5.3 para ayudar a los desarrolladores a organizar y estructurar sus aplicaciones. Los namespaces permiten definir un espacio de nombres (namespace) para un conjunto de clases, funciones y constantes, lo que ayuda a evitar conflictos de nombres y permite una mejor organización y mantenimiento del código.
+En PHP, los namespaces se definen mediante la palabra clave namespace, seguida del nombre del espacio de nombres y su definición.</description>
+    </item>
+    
     <item>
       <title>Magic Methods de PHP</title>
       <link>http://example.org/posts/magic-methods-de-php/</link>
