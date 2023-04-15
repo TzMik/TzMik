@@ -2,16 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://example.org/posts/que-son-las-cli/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/api/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/cli/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/cli/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/sistema-operativo/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/sistema-operativo/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/que-son-los-sdk/</loc>
+    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/api/</loc>
+    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/sdk/</loc>
+    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/sdk/</loc>
+    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/que-son-las-apis/</loc>
+    <lastmod>2023-04-15T12:08:53-06:00</lastmod>
+  </url><url>
     <loc>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/categories/</loc>
-    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/tags/clases-an%C3%B3nimas/</loc>
-    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/php/</loc>
@@ -20,16 +59,10 @@
     <loc>http://example.org/categories/php/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/tags/programaci%C3%B3n-orientada-a-objetos/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</loc>
-    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/posts/namespaces-en-php/</loc>

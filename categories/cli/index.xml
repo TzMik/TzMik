@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>cli on Mikel Cantero</title>
+    <link>http://example.org/categories/cli/</link>
+    <description>Recent content in cli on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 15 Apr 2023 12:25:17 -0600</lastBuildDate><atom:link href="http://example.org/categories/cli/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son las CLI?</title>
+      <link>http://example.org/posts/que-son-las-cli/</link>
+      <pubDate>Sat, 15 Apr 2023 12:25:17 -0600</pubDate>
+      
+      <guid>http://example.org/posts/que-son-las-cli/</guid>
+      <description>CLI son las siglas en inglés de &amp;ldquo;Command Line Interface&amp;rdquo; o Interfaz de Línea de Comandos en español. Se trata de una forma de interactuar con un ordenador o sistema operativo utilizando comandos escritos en texto plano, en lugar de hacer clic en iconos o utilizar una interfaz gráfica de usuario (GUI).
+Un CLI generalmente se presenta en una ventana de terminal o consola, donde el usuario escribe comandos específicos para realizar tareas en el sistema operativo.</description>
+    </item>
+    
+  </channel>
+</rss>

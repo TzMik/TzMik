@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sdk on Mikel Cantero</title>
+    <link>http://example.org/categories/sdk/</link>
+    <description>Recent content in sdk on Mikel Cantero</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-es</language>
+    <lastBuildDate>Sat, 15 Apr 2023 12:22:00 -0600</lastBuildDate><atom:link href="http://example.org/categories/sdk/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>¿Qué son los SDK?</title>
+      <link>http://example.org/posts/que-son-los-sdk/</link>
+      <pubDate>Sat, 15 Apr 2023 12:22:00 -0600</pubDate>
+      
+      <guid>http://example.org/posts/que-son-los-sdk/</guid>
+      <description>SDK son las siglas en inglés de &amp;ldquo;Software Development Kit&amp;rdquo; o en español &amp;ldquo;Kit de desarrollo de software&amp;rdquo;. Se trata de un conjunto de herramientas, librerías, documentación y ejemplos que permiten a los desarrolladores crear aplicaciones para una plataforma o sistema operativo específico.
+En términos simples, un SDK es una especie de &amp;ldquo;caja de herramientas&amp;rdquo; que los desarrolladores pueden utilizar para construir aplicaciones de manera más rápida y eficiente. Un SDK generalmente incluye herramientas de programación, bibliotecas de código, archivos de configuración y documentación.</description>
+    </item>
+    
+  </channel>
+</rss>

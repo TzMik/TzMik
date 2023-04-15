@@ -6,7 +6,43 @@
     <description>Recent content in Tags on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Fri, 07 Apr 2023 16:08:53 -0600</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 15 Apr 2023 12:25:17 -0600</lastBuildDate><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>api</title>
+      <link>http://example.org/tags/api/</link>
+      <pubDate>Sat, 15 Apr 2023 12:25:17 -0600</pubDate>
+      
+      <guid>http://example.org/tags/api/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>cli</title>
+      <link>http://example.org/tags/cli/</link>
+      <pubDate>Sat, 15 Apr 2023 12:25:17 -0600</pubDate>
+      
+      <guid>http://example.org/tags/cli/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sistema operativo</title>
+      <link>http://example.org/tags/sistema-operativo/</link>
+      <pubDate>Sat, 15 Apr 2023 12:25:17 -0600</pubDate>
+      
+      <guid>http://example.org/tags/sistema-operativo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sdk</title>
+      <link>http://example.org/tags/sdk/</link>
+      <pubDate>Sat, 15 Apr 2023 12:22:00 -0600</pubDate>
+      
+      <guid>http://example.org/tags/sdk/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>clases anónimas</title>
       <link>http://example.org/tags/clases-an%C3%B3nimas/</link>
