@@ -30,6 +30,7 @@
 
 
 
+
 <link rel="canonical" href="http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/">
 
 
@@ -70,7 +71,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.111.3">
+<meta name="generator" content="Hugo 0.92.2" />
 
 
 
@@ -179,23 +180,23 @@
 <p>En otras palabras, la encapsulación es el proceso de <strong>envolver los datos y los métodos que operan sobre ellos dentro de una sola entidad</strong>, lo que permite que estos datos sean <strong>protegidos y manipulados de manera controlada</strong>. Al encapsular los datos dentro de un objeto, se asegura que sólo puedan ser accedidos y modificados por los métodos que se han definido para ello.</p>
 <p>Por ejemplo, supongamos que estamos creando una clase de <em>Cuenta Bancaria</em> en una aplicación orientada a objetos. En este caso, podríamos encapsular los detalles de la cuenta (como el número de cuenta, el saldo, etc.) dentro de la clase, y exponer métodos públicos para depositar y retirar dinero, consultar el saldo, etc. Esto significa que cualquier otra parte del código que necesite acceder a los datos de la cuenta deberá hacerlo a través de los métodos públicos de la clase, lo que asegura que los datos sólo sean manipulados de acuerdo a las reglas definidas en la clase.</p>
 <p>Por ejemplo, podríamos definir una clase <code>CuentaBancaria</code> como sigue:</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">CuentaBancaria</span> {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#79c0ff">$numeroCuenta</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">private</span> <span style="color:#79c0ff">$saldo</span>;
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">depositar</span>(<span style="color:#79c0ff">$cantidad</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#8b949e;font-style:italic">// ... lógica para depositar la cantidad en la cuenta ...
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">retirar</span>(<span style="color:#79c0ff">$cantidad</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#8b949e;font-style:italic">// ... lógica para retirar la cantidad de la cuenta ...
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>    }
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">consultarSaldo</span>() {
-</span></span><span style="display:flex;"><span>        <span style="color:#8b949e;font-style:italic">// ... lógica para obtener el saldo actual de la cuenta ...
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>    }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>En este ejemplo, la clase <code>CuentaBancaria</code> encapsula los detalles de la cuenta, como el número de cuenta y el saldo, dentro de la clase, y expone métodos públicos para depositar y retirar dinero, así como para consultar el saldo actual. Al hacerlo, aseguramos que cualquier otra parte del código que necesite acceder a los datos de la cuenta lo haga a través de estos métodos públicos, lo que nos permite controlar cómo se accede y se manipula la cuenta.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> CuentaBancaria {
+    <span style="color:#fff;font-weight:bold">private</span> $numeroCuenta;
+    <span style="color:#fff;font-weight:bold">private</span> $saldo;
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> depositar($cantidad) {
+        <span style="color:#007f7f">// ... lógica para depositar la cantidad en la cuenta ...
+</span><span style="color:#007f7f"></span>    }
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> retirar($cantidad) {
+        <span style="color:#007f7f">// ... lógica para retirar la cantidad de la cuenta ...
+</span><span style="color:#007f7f"></span>    }
+
+    <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> consultarSaldo() {
+        <span style="color:#007f7f">// ... lógica para obtener el saldo actual de la cuenta ...
+</span><span style="color:#007f7f"></span>    }
+}
+</code></pre></div><p>En este ejemplo, la clase <code>CuentaBancaria</code> encapsula los detalles de la cuenta, como el número de cuenta y el saldo, dentro de la clase, y expone métodos públicos para depositar y retirar dinero, así como para consultar el saldo actual. Al hacerlo, aseguramos que cualquier otra parte del código que necesite acceder a los datos de la cuenta lo haga a través de estos métodos públicos, lo que nos permite controlar cómo se accede y se manipula la cuenta.</p>
 <h2 id="abstracción">
   Abstracción
   <a class="heading-link" href="#abstracci%c3%b3n">
@@ -206,32 +207,32 @@
 <p>La abstracción en programación orientada a objetos es el proceso de <strong>enfocarse en las características esenciales de un objeto y dejar de lado los detalles menos importantes</strong>. Es decir, la abstracción permite representar un objeto de manera <strong>simplificada</strong>, seleccionando únicamente las propiedades y métodos que son relevantes para la tarea que se quiere realizar.</p>
 <p>Una de las principales ventajas de la abstracción es que permite crear objetos <strong>más fáciles de entender y manejar</strong>, ya que se simplifica su complejidad al <strong>ocultar los detalles que no son necesarios</strong> en un momento dado. Además, la abstracción permite crear <strong>interfaces más limpias y cohesivas</strong> entre los diferentes objetos, lo que facilita la integración y el mantenimiento del código.</p>
 <p>Un ejemplo de abstracción en PHP podría ser una clase abstracta que defina una forma básica de un objeto. Supongamos que estamos creando un programa de dibujo y queremos crear diferentes formas para dibujar. Podríamos crear una clase abstracta llamada <code>Forma</code> que defina propiedades y métodos básicos, como el color, la posición y el tamaño de la forma, así como un método abstracto <code>dibujar</code> que cada forma específica tendría que implementar.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">abstract</span> <span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Forma</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$color</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$posicion</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$tamano</span>;
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __construct(<span style="color:#79c0ff">$color</span>, <span style="color:#79c0ff">$posicion</span>, <span style="color:#79c0ff">$tamano</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>color <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$color</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>posicion <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$posicion</span>;
-</span></span><span style="display:flex;"><span>    <span style="color:#79c0ff">$this</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>tamano <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$tamano</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">abstract</span> <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">dibujar</span>();
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Luego, podríamos crear diferentes clases que extiendan la clase abstracta <code>Forma</code>, como por ejemplo una clase <code>Rectangulo</code> o una clase <code>Circulo</code>, que definirían sus propias implementaciones del método <code>dibujar</code>. De esta manera, cada forma específica tiene acceso a las propiedades y métodos básicos definidos en la clase abstracta <code>Forma</code>, pero también puede personalizar y añadir su propia funcionalidad específica.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Rectangulo</span> <span style="color:#ff7b72">extends</span> Forma {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">dibujar</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación específica para dibujar un rectángulo
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Circulo</span> <span style="color:#ff7b72">extends</span> Forma {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">dibujar</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación específica para dibujar un círculo
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Al utilizar la abstracción en este ejemplo, se consigue que las formas sean más fáciles de entender y manejar, ya que se definen las propiedades y métodos básicos necesarios para todas las formas, pero se ocultan los detalles específicos de cada una. Además, se consigue una interfaz más limpia y cohesiva entre los diferentes objetos, lo que facilita la integración y el mantenimiento del código.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">abstract</span> <span style="color:#fff;font-weight:bold">class</span> Forma {
+  <span style="color:#fff;font-weight:bold">protected</span> $color;
+  <span style="color:#fff;font-weight:bold">protected</span> $posicion;
+  <span style="color:#fff;font-weight:bold">protected</span> $tamano;
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __construct($color, $posicion, $tamano) {
+    $this-&gt;<span style="color:#007f7f">color</span> = $color;
+    $this-&gt;<span style="color:#007f7f">posicion</span> = $posicion;
+    $this-&gt;<span style="color:#007f7f">tamano</span> = $tamano;
+  }
+  
+  <span style="color:#fff;font-weight:bold">abstract</span> <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> dibujar();
+}
+</code></pre></div><p>Luego, podríamos crear diferentes clases que extiendan la clase abstracta <code>Forma</code>, como por ejemplo una clase <code>Rectangulo</code> o una clase <code>Circulo</code>, que definirían sus propias implementaciones del método <code>dibujar</code>. De esta manera, cada forma específica tiene acceso a las propiedades y métodos básicos definidos en la clase abstracta <code>Forma</code>, pero también puede personalizar y añadir su propia funcionalidad específica.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Rectangulo <span style="color:#fff;font-weight:bold">extends</span> Forma {
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> dibujar() {
+    <span style="color:#007f7f">// Implementación específica para dibujar un rectángulo
+</span><span style="color:#007f7f"></span>  }
+}
+
+<span style="color:#fff;font-weight:bold">class</span> Circulo <span style="color:#fff;font-weight:bold">extends</span> Forma {
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> dibujar() {
+    <span style="color:#007f7f">// Implementación específica para dibujar un círculo
+</span><span style="color:#007f7f"></span>  }
+}
+</code></pre></div><p>Al utilizar la abstracción en este ejemplo, se consigue que las formas sean más fáciles de entender y manejar, ya que se definen las propiedades y métodos básicos necesarios para todas las formas, pero se ocultan los detalles específicos de cada una. Además, se consigue una interfaz más limpia y cohesiva entre los diferentes objetos, lo que facilita la integración y el mantenimiento del código.</p>
 <h2 id="herencia">
   Herencia
   <a class="heading-link" href="#herencia">
@@ -242,38 +243,38 @@
 <p>La herencia es un concepto fundamental en la programación orientada a objetos que <strong>permite crear nuevas clases a partir de clases existentes</strong>. En la herencia, una clase (llamada clase hija o subclase) puede heredar propiedades y métodos de otra clase (llamada clase padre o superclase). <strong>La clase hija puede utilizar y añadir a las propiedades y métodos de la clase padre, y además puede definir sus propias propiedades y métodos adicionales</strong>.</p>
 <p>Las ventajas de la herencia son varias. En primer lugar, la herencia permite la <strong>reutilización de código</strong>, lo que significa que las clases hijas pueden heredar el código de la clase padre y así no se tiene que escribir el mismo código una y otra vez. En segundo lugar, la herencia puede <strong>mejorar la organización del código</strong>, ya que las clases hijas pueden agruparse en una jerarquía de clases que refleje su relación. Por último, la herencia puede mejorar la <strong>flexibilidad del código</strong>, ya que se puede cambiar el comportamiento de una clase hija al modificar la clase padre, lo que permite adaptar el código a diferentes situaciones.</p>
 <p>Un ejemplo sencillo de herencia en PHP podría ser una clase <code>Vehiculo</code> que define propiedades y métodos comunes para todos los vehículos, como la velocidad, la dirección, el combustible, etc. Luego, podríamos crear una clase hija <code>Automovil</code> que hereda de <code>Vehiculo</code> y que añade propiedades y métodos específicos para los automóviles, como la marca, el modelo, el número de puertas, etc. De esta manera, la clase <code>Automovil</code> puede utilizar y añadir a las propiedades y métodos de <code>Vehiculo</code>, pero también puede definir sus propias propiedades y métodos.</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Vehiculo</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$velocidad</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$direccion</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$combustible</span>;
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">acelerar</span>(<span style="color:#79c0ff">$aceleracion</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación para aumentar la velocidad del vehículo
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">girar</span>(<span style="color:#79c0ff">$direccion</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación para cambiar la dirección del vehículo
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">cargarCombustible</span>(<span style="color:#79c0ff">$cantidad</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación para añadir combustible al vehículo
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Automovil</span> <span style="color:#ff7b72">extends</span> Vehiculo {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$marca</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$modelo</span>;
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">protected</span> <span style="color:#79c0ff">$numeroPuertas</span>;
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">abrirPuertas</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación para abrir las puertas del automóvil
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>  
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">cambiarRadio</span>(<span style="color:#79c0ff">$emisora</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#8b949e;font-style:italic">// Implementación para cambiar la emisora de la radio del automóvil
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>En este ejemplo, la clase <code>Automovil</code> hereda propiedades y métodos de la clase <code>Vehiculo</code>, y además define sus propias propiedades y métodos adicionales. Esto permite reutilizar el código de la clase <code>Vehiculo</code> para la clase <code>Automovil</code> y definir el comportamiento específico de los automóviles en la clase <code>Automovil</code>.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Vehiculo {
+  <span style="color:#fff;font-weight:bold">protected</span> $velocidad;
+  <span style="color:#fff;font-weight:bold">protected</span> $direccion;
+  <span style="color:#fff;font-weight:bold">protected</span> $combustible;
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> acelerar($aceleracion) {
+    <span style="color:#007f7f">// Implementación para aumentar la velocidad del vehículo
+</span><span style="color:#007f7f"></span>  }
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> girar($direccion) {
+    <span style="color:#007f7f">// Implementación para cambiar la dirección del vehículo
+</span><span style="color:#007f7f"></span>  }
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> cargarCombustible($cantidad) {
+    <span style="color:#007f7f">// Implementación para añadir combustible al vehículo
+</span><span style="color:#007f7f"></span>  }
+}
+
+<span style="color:#fff;font-weight:bold">class</span> Automovil <span style="color:#fff;font-weight:bold">extends</span> Vehiculo {
+  <span style="color:#fff;font-weight:bold">protected</span> $marca;
+  <span style="color:#fff;font-weight:bold">protected</span> $modelo;
+  <span style="color:#fff;font-weight:bold">protected</span> $numeroPuertas;
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> abrirPuertas() {
+    <span style="color:#007f7f">// Implementación para abrir las puertas del automóvil
+</span><span style="color:#007f7f"></span>  }
+  
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> cambiarRadio($emisora) {
+    <span style="color:#007f7f">// Implementación para cambiar la emisora de la radio del automóvil
+</span><span style="color:#007f7f"></span>  }
+}
+</code></pre></div><p>En este ejemplo, la clase <code>Automovil</code> hereda propiedades y métodos de la clase <code>Vehiculo</code>, y además define sus propias propiedades y métodos adicionales. Esto permite reutilizar el código de la clase <code>Vehiculo</code> para la clase <code>Automovil</code> y definir el comportamiento específico de los automóviles en la clase <code>Automovil</code>.</p>
 <h2 id="polimorfismo">
   Polimorfismo
   <a class="heading-link" href="#polimorfismo">
@@ -299,33 +300,33 @@
 </li>
 </ol>
 <p>Aquí hay un ejemplo de polimorfismo en PHP:</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Animal</span> {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">makeSound</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Animal is making a sound&#34;</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Dog</span> <span style="color:#ff7b72">extends</span> Animal {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">makeSound</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Dog is barking&#34;</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#ff7b72">class</span> <span style="color:#f0883e;font-weight:bold">Cat</span> <span style="color:#ff7b72">extends</span> Animal {
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">makeSound</span>() {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">echo</span> <span style="color:#a5d6ff">&#34;Cat is meowing&#34;</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>}
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal1</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Animal();
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal1</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>makeSound(); <span style="color:#8b949e;font-style:italic">// Output: &#34;Animal is making a sound&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal2</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Dog();
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal2</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>makeSound(); <span style="color:#8b949e;font-style:italic">// Output: &#34;Dog is barking&#34;
-</span></span></span><span style="display:flex;"><span><span style="color:#8b949e;font-style:italic"></span>
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal3</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> Cat();
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$animal3</span><span style="color:#ff7b72;font-weight:bold">-&gt;</span>makeSound(); <span style="color:#8b949e;font-style:italic">// Output: &#34;Cat is meowing&#34;
-</span></span></span></code></pre></div><p>En este ejemplo, la clase Animal tiene un método <code>makeSound()</code> que se sobrescribe en las subclases <code>Dog</code> y <code>Cat</code>. Al crear instancias de cada una de las subclases y llamar al método <code>makeSound()</code>, cada objeto muestra su propio comportamiento, lo que demuestra el polimorfismo.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">class</span> Animal {
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> makeSound() {
+    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Animal is making a sound&#34;</span>;
+  }
+}
+
+<span style="color:#fff;font-weight:bold">class</span> Dog <span style="color:#fff;font-weight:bold">extends</span> Animal {
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> makeSound() {
+    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Dog is barking&#34;</span>;
+  }
+}
+
+<span style="color:#fff;font-weight:bold">class</span> Cat <span style="color:#fff;font-weight:bold">extends</span> Animal {
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> makeSound() {
+    <span style="color:#fff;font-weight:bold">echo</span> <span style="color:#0ff;font-weight:bold">&#34;Cat is meowing&#34;</span>;
+  }
+}
+
+$animal1 = <span style="color:#fff;font-weight:bold">new</span> Animal();
+$animal1-&gt;<span style="color:#007f7f">makeSound</span>(); <span style="color:#007f7f">// Output: &#34;Animal is making a sound&#34;
+</span><span style="color:#007f7f"></span>
+$animal2 = <span style="color:#fff;font-weight:bold">new</span> Dog();
+$animal2-&gt;<span style="color:#007f7f">makeSound</span>(); <span style="color:#007f7f">// Output: &#34;Dog is barking&#34;
+</span><span style="color:#007f7f"></span>
+$animal3 = <span style="color:#fff;font-weight:bold">new</span> Cat();
+$animal3-&gt;<span style="color:#007f7f">makeSound</span>(); <span style="color:#007f7f">// Output: &#34;Cat is meowing&#34;
+</span></code></pre></div><p>En este ejemplo, la clase Animal tiene un método <code>makeSound()</code> que se sobrescribe en las subclases <code>Dog</code> y <code>Cat</code>. Al crear instancias de cada una de las subclases y llamar al método <code>makeSound()</code>, cada objeto muestra su propio comportamiento, lo que demuestra el polimorfismo.</p>
 
       </div>
 
@@ -365,7 +366,7 @@
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
   
 
   

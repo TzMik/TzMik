@@ -30,6 +30,7 @@
 
 
 
+
 <link rel="canonical" href="http://example.org/posts/que-son-las-clases-an%C3%B3nimas/">
 
 
@@ -70,7 +71,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.111.3">
+<meta name="generator" content="Hugo 0.92.2" />
 
 
 
@@ -212,25 +213,26 @@
 </h2>
 <p>Un ejemplo común de uso de clases anónimas en PHP es en la definición de closures. Las closures son funciones que pueden ser almacenadas y pasadas como argumentos a otras funciones, y pueden ser utilizadas para implementar características avanzadas de la POO, como el patrón de diseño de Strategy.</p>
 <p>Supongamos que tenemos la siguiente función <code>filtrar</code> que toma un array y una función de filtro como argumentos, y devuelve un nuevo array que contiene sólo los elementos que cumplen con la condición del filtro:</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#ff7b72">function</span> <span style="color:#d2a8ff;font-weight:bold">filtrar</span>(<span style="color:#79c0ff">$array</span>, <span style="color:#79c0ff">$filtro</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#79c0ff">$resultado</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">array</span>();
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">foreach</span> (<span style="color:#79c0ff">$array</span> <span style="color:#ff7b72">as</span> <span style="color:#79c0ff">$elemento</span>) {
-</span></span><span style="display:flex;"><span>        <span style="color:#ff7b72">if</span> (<span style="color:#79c0ff">$filtro</span>(<span style="color:#79c0ff">$elemento</span>)) {
-</span></span><span style="display:flex;"><span>            <span style="color:#79c0ff">$resultado</span>[] <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#79c0ff">$elemento</span>;
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>    }
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">$resultado</span>;
-</span></span><span style="display:flex;"><span>}
-</span></span></code></pre></div><p>Para utilizar esta función, podemos definir una closure que implemente el filtro que deseamos. Por ejemplo, para filtrar todos los elementos mayores que 10 de un array, podemos utilizar la siguiente clase anónima:</p>
-<div class="highlight"><pre tabindex="0" style="color:#c9d1d9;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-php" data-lang="php"><span style="display:flex;"><span><span style="color:#79c0ff">$array</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">array</span>(<span style="color:#a5d6ff">5</span>, <span style="color:#a5d6ff">10</span>, <span style="color:#a5d6ff">15</span>, <span style="color:#a5d6ff">20</span>);
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$filtro</span> <span style="color:#ff7b72;font-weight:bold">=</span> <span style="color:#ff7b72">new</span> <span style="color:#ff7b72">class</span> <span style="color:#f85149">{</span>
-</span></span><span style="display:flex;"><span>  <span style="color:#ff7b72">public</span> <span style="color:#ff7b72">function</span> __invoke(<span style="color:#79c0ff">$elemento</span>) {
-</span></span><span style="display:flex;"><span>    <span style="color:#ff7b72">return</span> <span style="color:#79c0ff">$elemento</span> <span style="color:#ff7b72;font-weight:bold">&gt;</span> <span style="color:#a5d6ff">10</span>;
-</span></span><span style="display:flex;"><span>  }
-</span></span><span style="display:flex;"><span>};
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span><span style="color:#79c0ff">$resultado</span> <span style="color:#ff7b72;font-weight:bold">=</span> filtrar(<span style="color:#79c0ff">$array</span>, <span style="color:#79c0ff">$filtro</span>);
-</span></span></code></pre></div><p>En este ejemplo, hemos creado una clase anónima que implementa el filtro deseado utilizando el método <code>__invoke</code>, que permite que la clase se pueda utilizar como una función. Después, pasamos la clase anónima como argumento a la función <code>filtrar</code> para que aplique el filtro al array.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#fff;font-weight:bold">function</span> filtrar($array, $filtro) {
+    $resultado = <span style="color:#fff;font-weight:bold">array</span>();
+    <span style="color:#fff;font-weight:bold">foreach</span> ($array <span style="color:#fff;font-weight:bold">as</span> $elemento) {
+        <span style="color:#fff;font-weight:bold">if</span> ($filtro($elemento)) {
+            $resultado[] = $elemento;
+        }
+    }
+    <span style="color:#fff;font-weight:bold">return</span> $resultado;
+}
+
+</code></pre></div><p>Para utilizar esta función, podemos definir una closure que implemente el filtro que deseamos. Por ejemplo, para filtrar todos los elementos mayores que 10 de un array, podemos utilizar la siguiente clase anónima:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e5e5e5;background-color:#000;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$array = <span style="color:#fff;font-weight:bold">array</span>(<span style="color:#ff0;font-weight:bold">5</span>, <span style="color:#ff0;font-weight:bold">10</span>, <span style="color:#ff0;font-weight:bold">15</span>, <span style="color:#ff0;font-weight:bold">20</span>);
+$filtro = <span style="color:#fff;font-weight:bold">new</span> <span style="color:#fff;font-weight:bold">class</span> <span style="color:#f00">{</span>
+  <span style="color:#fff;font-weight:bold">public</span> <span style="color:#fff;font-weight:bold">function</span> __invoke($elemento) {
+    <span style="color:#fff;font-weight:bold">return</span> $elemento &gt; <span style="color:#ff0;font-weight:bold">10</span>;
+  }
+};
+
+$resultado = filtrar($array, $filtro);
+</code></pre></div><p>En este ejemplo, hemos creado una clase anónima que implementa el filtro deseado utilizando el método <code>__invoke</code>, que permite que la clase se pueda utilizar como una función. Después, pasamos la clase anónima como argumento a la función <code>filtrar</code> para que aplique el filtro al array.</p>
 <h2 id="conclusión">
   Conclusión
   <a class="heading-link" href="#conclusi%c3%b3n">
@@ -278,7 +280,7 @@
 
   
   
-  <script src="/js/coder.min.6ae284be93d2d19dad1f02b0039508d9aab3180a12a06dcc71b0b0ef7825a317.js" integrity="sha256-auKEvpPS0Z2tHwKwA5UI2aqzGAoSoG3McbCw73gloxc="></script>
+  <script src="/js/coder.min.369d90111ae4409b4e51de5efd23a46b92663fcc82dc9a0efde7f70bffc3f949.js" integrity="sha256-Np2QERrkQJtOUd5e/SOka5JmP8yC3JoO/ef3C//D&#43;Uk="></script>
   
 
   

@@ -14,7 +14,7 @@
       
       <guid>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</guid>
       <description>En la actualidad la Programación Orientada a Objetos se ha vuelto una especie de estandar en la industria. En este post veremos brevemente las principales 4 razones detrás de esto:
-La encapsulación Link to heading La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
+La encapsulación  Link to heading   La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
     </item>
     
   </channel>

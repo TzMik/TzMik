@@ -6,7 +6,17 @@
     <description>Recent content on Mikel Cantero</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-es</language>
-    <lastBuildDate>Sat, 15 Apr 2023 12:33:58 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 15 Jun 2023 16:02:31 -0600</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>12 rasgos del estoicismo</title>
+      <link>http://example.org/posts/12-rasgos-del-estoicismo/</link>
+      <pubDate>Thu, 15 Jun 2023 16:02:31 -0600</pubDate>
+      
+      <guid>http://example.org/posts/12-rasgos-del-estoicismo/</guid>
+      <description>Durante mucho tiempo estuve leyendo y escuchando sobre el &amp;ldquo;estoicismo&amp;rdquo; en diversos lugares, y finalmente, durante mi visita a España, tuve la suerte de encontrar un libro que captó mi atención de inmediato: &amp;ldquo;Cómo ser un estoico&amp;rdquo; de Massimo Pigliucci. Su lectura resultó ser muy entretenida y me permitió reencontrarme con la filosofía, una asignatura que solía disfrutar mucho durante mis días en el instituto.
+Del libro, adquirí varias enseñanzas valiosas que deseo compartir aquí, para poder referirme a ellas en el futuro y extraer las mejores lecciones de este movimiento filosófico.</description>
+    </item>
+    
     <item>
       <title>Los códigos de estado HTTP más importantes que debes conocer</title>
       <link>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</link>
@@ -14,7 +24,7 @@
       
       <guid>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</guid>
       <description>Los códigos de estado HTTP son una forma de comunicación entre el servidor y el cliente en una solicitud HTTP. Estos códigos son una forma de indicar el resultado de la solicitud y proporcionan información útil para el cliente y el servidor. Aquí están los códigos de estado HTTP más importantes que todo desarrollador web debería conocer.
-1xx - Respuestas informativas Link to heading Los códigos de estado en la serie 1xx son respuestas informativas, lo que significa que el servidor está respondiendo a una solicitud preliminar del cliente y que aún no ha comenzado a procesar la solicitud.</description>
+1xx - Respuestas informativas  Link to heading   Los códigos de estado en la serie 1xx son respuestas informativas, lo que significa que el servidor está respondiendo a una solicitud preliminar del cliente y que aún no ha comenzado a procesar la solicitud.</description>
     </item>
     
     <item>
@@ -54,7 +64,7 @@ En términos simples, un SDK es una especie de &amp;ldquo;caja de herramientas&a
       
       <guid>http://example.org/posts/que-son-las-apis/</guid>
       <description>Las APIs, o Interfaces de Programación de Aplicaciones, son herramientas esenciales para la creación y el consumo de servicios web en la actualidad. En este artículo, explicaremos qué son las APIs, para qué sirven y cuáles son sus principales ventajas.
-¿Qué son las APIs? Link to heading En términos simples, una API es un conjunto de reglas, protocolos y herramientas que permiten a diferentes sistemas comunicarse entre sí. En el contexto de la informática, una API permite a los desarrolladores de software interactuar con una aplicación o servicio web de manera programática, sin la necesidad de interactuar directamente con su interfaz de usuario.</description>
+¿Qué son las APIs?  Link to heading   En términos simples, una API es un conjunto de reglas, protocolos y herramientas que permiten a diferentes sistemas comunicarse entre sí.</description>
     </item>
     
     <item>
@@ -103,8 +113,8 @@ Al igual que las interfaces, los traits son una característica introducida en P
       <pubDate>Fri, 07 Apr 2023 12:08:53 -0600</pubDate>
       
       <guid>http://example.org/posts/interfaces-en-la-poo/</guid>
-      <description>Introducción Link to heading Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
-¿Qué son las interfaces? Link to heading En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
+      <description>Introducción  Link to heading   Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
+¿Qué son las interfaces?  Link to heading   En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
     </item>
     
     <item>
@@ -114,7 +124,7 @@ Al igual que las interfaces, los traits son una característica introducida en P
       
       <guid>http://example.org/posts/abstraccion-en-la-poo/</guid>
       <description>La abstracción es uno de los conceptos fundamentales de la programación orientada a objetos (POO). En términos simples, la abstracción es la capacidad de centrarse en los aspectos esenciales de un objeto o concepto y eliminar los detalles innecesarios o irrelevantes. La abstracción permite a los programadores diseñar sistemas complejos de manera más efectiva, simplificando la complejidad y promoviendo la modularidad y la reutilización de código.
-Ventajas y desventajas Link to heading La abstracción tiene varias ventajas en la POO:</description>
+Ventajas y desventajas  Link to heading   La abstracción tiene varias ventajas en la POO:</description>
     </item>
     
     <item>
@@ -124,7 +134,7 @@ Ventajas y desventajas Link to heading La abstracción tiene varias ventajas en 
       
       <guid>http://example.org/posts/herencia-en-la-poo/</guid>
       <description>La herencia es un concepto fundamental en la programación orientada a objetos. En este post, exploraremos las ventajas y desventajas de la herencia en PHP, las diferencias entre las variables públicas, privadas y protegidas, la sobreescritura de métodos y variables en una clase hija, y los métodos y clases de tipo final.
-Introducción Link to heading La herencia es uno de los conceptos fundamentales de la programación orientada a objetos. En términos simples, permite a una clase derivar características y comportamientos de otra clase existente, llamada clase base o superclase (padre).</description>
+Introducción  Link to heading   La herencia es uno de los conceptos fundamentales de la programación orientada a objetos.</description>
     </item>
     
     <item>
@@ -182,7 +192,7 @@ También tengo conocimientos en distintas herramientas y tecnologías tales como
       
       <guid>http://example.org/posts/ventajas-de-la-programacion-orientada-a-objetos/</guid>
       <description>En la actualidad la Programación Orientada a Objetos se ha vuelto una especie de estandar en la industria. En este post veremos brevemente las principales 4 razones detrás de esto:
-La encapsulación Link to heading La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
+La encapsulación  Link to heading   La encapsulación es uno de los cuatro conceptos fundamentales de la programación orientada a objetos (POO). Se refiere a la técnica de ocultar la complejidad interna de un objeto, permitiendo que sólo se acceda a él a través de una interfaz pública, que está formada por los métodos y propiedades que el objeto expone para su uso por parte de otros objetos.</description>
     </item>
     
   </channel>

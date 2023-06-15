@@ -2,13 +2,37 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://example.org/posts/12-rasgos-del-estoicismo/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/estoicismo/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/estoicismo/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/filosofia/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/categories/filosofia/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/tags/</loc>
+    <lastmod>2023-06-15T16:02:31-06:00</lastmod>
+  </url><url>
     <loc>http://example.org/tags/api/</loc>
     <lastmod>2023-04-15T12:33:58-06:00</lastmod>
   </url><url>
     <loc>http://example.org/categories/api/</loc>
-    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/categories/</loc>
     <lastmod>2023-04-15T12:33:58-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/c%C3%B3digos-de-estado-http/</loc>
@@ -23,15 +47,6 @@
     <loc>http://example.org/posts/los-codigos-de-estado-http-mas-importantes-que-debes-conocer/</loc>
     <lastmod>2023-04-15T12:33:58-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/</loc>
-    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/</loc>
-    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/tags/</loc>
-    <lastmod>2023-04-15T12:33:58-06:00</lastmod>
-  </url><url>
     <loc>http://example.org/tags/postman/</loc>
     <lastmod>2023-04-15T12:30:10-06:00</lastmod>
   </url><url>
@@ -40,9 +55,6 @@
   </url><url>
     <loc>http://example.org/posts/postman/</loc>
     <lastmod>2023-04-15T12:30:10-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/que-son-las-cli/</loc>
-    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/cli/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
@@ -56,8 +68,8 @@
     <loc>http://example.org/categories/sistema-operativo/</loc>
     <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/que-son-los-sdk/</loc>
-    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+    <loc>http://example.org/posts/que-son-las-cli/</loc>
+    <lastmod>2023-04-15T12:25:17-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/sdk/</loc>
     <lastmod>2023-04-15T12:22:00-06:00</lastmod>
@@ -65,11 +77,11 @@
     <loc>http://example.org/categories/sdk/</loc>
     <lastmod>2023-04-15T12:22:00-06:00</lastmod>
   </url><url>
+    <loc>http://example.org/posts/que-son-los-sdk/</loc>
+    <lastmod>2023-04-15T12:22:00-06:00</lastmod>
+  </url><url>
     <loc>http://example.org/posts/que-son-las-apis/</loc>
     <lastmod>2023-04-15T12:08:53-06:00</lastmod>
-  </url><url>
-    <loc>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</loc>
-    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/clases-an%C3%B3nimas/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
@@ -86,10 +98,13 @@
     <loc>http://example.org/categories/programaci%C3%B3n-orientada-a-objetos/</loc>
     <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/namespaces-en-php/</loc>
-    <lastmod>2023-04-07T15:08:53-06:00</lastmod>
+    <loc>http://example.org/posts/que-son-las-clases-an%C3%B3nimas/</loc>
+    <lastmod>2023-04-07T16:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/namespaces/</loc>
+    <lastmod>2023-04-07T15:08:53-06:00</lastmod>
+  </url><url>
+    <loc>http://example.org/posts/namespaces-en-php/</loc>
     <lastmod>2023-04-07T15:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/tags/abstracci%C3%B3n/</loc>
@@ -104,10 +119,10 @@
     <loc>http://example.org/posts/traits-en-la-poo/</loc>
     <lastmod>2023-04-07T13:08:53-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/posts/interfaces-en-la-poo/</loc>
+    <loc>http://example.org/tags/interfaces/</loc>
     <lastmod>2023-04-07T12:08:53-06:00</lastmod>
   </url><url>
-    <loc>http://example.org/tags/interfaces/</loc>
+    <loc>http://example.org/posts/interfaces-en-la-poo/</loc>
     <lastmod>2023-04-07T12:08:53-06:00</lastmod>
   </url><url>
     <loc>http://example.org/posts/abstraccion-en-la-poo/</loc>

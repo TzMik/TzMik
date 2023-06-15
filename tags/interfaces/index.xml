@@ -13,8 +13,8 @@
       <pubDate>Fri, 07 Apr 2023 12:08:53 -0600</pubDate>
       
       <guid>http://example.org/posts/interfaces-en-la-poo/</guid>
-      <description>Introducción Link to heading Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
-¿Qué son las interfaces? Link to heading En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
+      <description>Introducción  Link to heading   Las interfaces son una parte esencial de la programación orientada a objetos (POO). Una interfaz es un conjunto de métodos abstractos que una clase debe implementar para cumplir con un contrato determinado. En este artículo, explicaremos en detalle qué son las interfaces, sus ventajas y desventajas y un ejemplo con PHP.
+¿Qué son las interfaces?  Link to heading   En POO, una interfaz es un conjunto de métodos abstractos que define un contrato que las clases que implementan dicha interfaz deben cumplir.</description>
     </item>
     
   </channel>
